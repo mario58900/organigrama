@@ -1,0 +1,2672 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Organigrama ATIP · Caño Sur Este · 2026</title>
+<style>
+:root{
+  --bg:#0a0f1e;--bg2:#111a30;--panel:#161f38;--panel2:#1b264a;
+  --text:#e8edff;--text-2:#a8b6d4;--muted:#6b779b;
+  --acc:#46d3ff;--ext:#a78bfa;--mat:#ff8c42;--tra:#27d29c;--ida:#f7b955;--ecp:#FFD700;
+  --border:rgba(255,255,255,.08);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:13.5px/1.5 'Inter','Segoe UI',system-ui,sans-serif}
+.wrap{max-width:1640px;margin:0 auto;padding:22px 26px 80px}
+
+.hero{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;border-bottom:1px solid var(--border);padding-bottom:16px;margin-bottom:18px}
+.hero h1{margin:0;font-size:25px;letter-spacing:.3px;background:linear-gradient(90deg,#46d3ff,#a78bfa);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero .sub{color:var(--text-2);font-size:12.5px;margin-top:5px}
+.hero-right{text-align:right;flex-shrink:0}
+.hero-right .big{font-size:36px;font-weight:800;color:var(--acc);line-height:1}
+.hero-right .lbl{font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--text-2)}
+
+.kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:18px 0 22px}
+.kpi{background:linear-gradient(135deg,var(--panel),var(--panel2));border:1px solid var(--border);border-radius:12px;padding:14px 16px;position:relative;overflow:hidden}
+.kpi::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;border-radius:2px;background:var(--acc)}
+.kpi.k-ext::before{background:var(--ext)}.kpi.k-mat::before{background:var(--mat)}.kpi.k-tra::before{background:var(--tra)}.kpi.k-ida::before{background:var(--ida)}.kpi.k-ecp::before{background:var(--ecp)}
+.kpi .lbl{color:var(--text-2);font-size:10px;text-transform:uppercase;letter-spacing:.7px;font-weight:700}
+.kpi .val{font-size:30px;font-weight:800;margin-top:4px}
+.kpi.k-est .val{color:var(--acc)}.kpi.k-ext .val{color:var(--ext)}.kpi.k-mat .val{color:var(--mat)}.kpi.k-tra .val{color:var(--tra)}.kpi.k-ida .val{color:var(--ida)}
+.kpi .sub{font-size:11px;color:var(--text-2);margin-top:3px}
+
+.filterbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:12px 16px;margin-bottom:20px}
+.filterbar input,.filterbar select{background:var(--panel2);border:1px solid var(--border);color:var(--text);padding:7px 11px;border-radius:7px;font-size:12.5px;outline:none}
+.filterbar input:focus,.filterbar select:focus{border-color:var(--acc)}
+.chip{cursor:pointer;padding:6px 13px;border-radius:20px;font-size:11.5px;font-weight:600;background:rgba(255,255,255,.04);border:1px solid var(--border);color:var(--text-2);transition:.15s}
+.chip:hover{border-color:var(--acc);color:var(--acc)}
+.chip.act{color:#0a0f1e;background:var(--acc);border-color:var(--acc)}
+.chip[data-a="EXTERIORES"].act{background:var(--ext);border-color:var(--ext)}
+.chip[data-a="MATERIALES"].act{background:var(--mat);border-color:var(--mat)}
+.chip[data-a="TRANSVERSAL"].act{background:var(--tra);border-color:var(--tra)}
+.chip[data-a="IDA"].act{background:var(--ida);border-color:var(--ida)}
+.chip[data-a="ECOPETROL"].act{background:var(--ecp);border-color:var(--ecp);color:#0a0f1e}
+
+.coord-wrap{margin-bottom:24px}
+.coord-wrap h2{margin:0 0 12px;font-size:13px;color:var(--text-2);text-transform:uppercase;letter-spacing:1.1px;font-weight:700;display:flex;align-items:center;gap:9px}
+.coord-wrap h2::before{content:"";width:4px;height:14px;background:var(--acc);border-radius:2px}
+.coord-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));gap:14px}
+.coord-grid .card{background:linear-gradient(135deg,#1b264a,#231d4d);border:1.5px solid rgba(167,139,250,.45);position:relative}
+.coord-grid .card::after{content:"COORDINADOR";position:absolute;top:8px;right:9px;font-size:9.5px;font-weight:800;letter-spacing:1px;color:#a78bfa;background:rgba(167,139,250,.12);padding:2px 8px;border-radius:6px;border:1px solid rgba(167,139,250,.3)}
+.coord-grid .ph{width:78px;height:78px}
+
+/* === Cliente / Ecopetrol === */
+/* === CLIENTE / ECOPETROL === */
+
+.ecp-wrap{
+    margin-bottom:26px;
+}
+
+.ecp-wrap h2{
+    margin:0 0 12px;
+    font-size:13px;
+    color:var(--text-2);
+    text-transform:uppercase;
+    letter-spacing:1.1px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    gap:9px;
+}
+
+.ecp-wrap h2::before{
+    content:"";
+    width:4px;
+    height:14px;
+    background:var(--ecp);
+    border-radius:2px;
+}
+
+/* TARJETA PRINCIPAL */
+.ecp-head-main{
+    display:flex;
+    justify-content:center;
+    margin-bottom:30px;
+    position:relative;
+}
+
+.ecp-head-main .card{
+    width:400px;
+    max-width:95%;
+    min-height:130px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:18px 24px;
+
+    background:linear-gradient(135deg,#1d1b2e,#2d2a1a);
+    border:2px solid rgba(255,215,0,.65);
+}
+
+.ecp-head-main .ph{
+    width:90px;
+    height:90px;
+    border:3px solid rgba(255,215,0,.55)!important;
+}
+	
+	.ecp-head-main .info{
+    flex:1;
+    padding-left:18px;
+}
+
+.ecp-head-main .role{
+    color:var(--ecp)!important;
+}
+
+.ecp-head-main::after{
+    content:"";
+    position:absolute;
+    left:50%;
+    bottom:-18px;
+    width:2px;
+    height:18px;
+    background:rgba(255,215,0,.45);
+    transform:translateX(-50%);
+}
+
+/* CONECTOR */
+.tree-connector-main{
+    width:80%;
+    height:2px;
+    margin:0 auto 24px;
+    background:rgba(255,215,0,.35);
+    position:relative;
+}
+
+.tree-connector-main::before{
+    content:"";
+    position:absolute;
+    left:50%;
+    top:-18px;
+    width:2px;
+    height:18px;
+    background:rgba(255,215,0,.35);
+    transform:translateX(-50%);
+}
+
+/* SEGUNDO NIVEL */
+.ecp-head{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:14px;
+    position:relative;
+}
+
+.ecp-head .card{
+       display:flex;
+    align-items:center;
+    gap:12px;
+
+    background:linear-gradient(135deg,#1d1b2e,#2d2a1a);
+    border:1.5px solid rgba(255,215,0,.35);
+
+    padding:10px;
+}
+
+.ecp-head .card:hover{
+    border-color:var(--ecp);
+    box-shadow:0 6px 18px rgba(255,215,0,.18);
+}
+
+.ecp-head .ph{
+    width:64px;
+    height:64px;
+    border-color:rgba(255,215,0,.45)!important;
+}
+
+.ecp-head .role{
+    color:var(--ecp)!important;
+}
+	
+	
+	
+
+.area{margin:30px 0 12px}
+.ah{display:flex;justify-content:space-between;align-items:center;margin-bottom:13px}
+.atit{display:flex;align-items:center;gap:14px}
+.atit .alabel{font-size:15px;font-weight:800;letter-spacing:1.2px;color:var(--text);padding:7px 16px;border-radius:9px;background:rgba(70,211,255,.08);border:1px solid rgba(70,211,255,.25)}
+.area[data-area="FACILIDADES"] .atit .alabel{background:rgba(167,139,250,.08);border-color:rgba(167,139,250,.3);color:var(--ext)}
+.area[data-area="MATERIALES"] .atit .alabel{background:rgba(255,140,66,.08);border-color:rgba(255,140,66,.3);color:var(--mat)}
+.area[data-area="TRANSVERSAL"] .atit .alabel{background:rgba(39,210,156,.08);border-color:rgba(39,210,156,.3);color:var(--tra)}
+.area[data-area="IDA"] .atit .alabel{background:rgba(247,185,85,.08);border-color:rgba(247,185,85,.3);color:var(--ida)}
+.area[data-area="DIR"] .atit .alabel{color:var(--acc)}
+.atit .acnt{color:var(--text-2);font-size:11.5px;font-weight:600}
+
+grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:11px}
+.card{display:flex;gap:11px;background:var(--panel);border:1px solid var(--border);border-radius:11px;padding:11px;cursor:pointer;transition:.15s;outline:none}
+.card:hover{transform:translateY(-2px);border-color:var(--acc);box-shadow:0 6px 18px rgba(70,211,255,.15)}
+.card:focus{border-color:var(--acc);box-shadow:0 0 0 2px rgba(70,211,255,.4)}
+.card[data-area="FACILIDADES"]:hover{border-color:var(--ext);box-shadow:0 6px 18px rgba(167,139,250,.15)}
+.card[data-area="MATERIALES"]:hover{border-color:var(--mat);box-shadow:0 6px 18px rgba(255,140,66,.15)}
+.card[data-area="TRANSVERSAL"]:hover{border-color:var(--tra);box-shadow:0 6px 18px rgba(39,210,156,.15)}
+.card[data-area="IDA"]:hover{border-color:var(--ida);box-shadow:0 6px 18px rgba(247,185,85,.15)}
+.ph{flex-shrink:0;width:64px;height:64px;border-radius:50%;overflow:hidden;background:#222;border:2px solid var(--border)}
+.card[data-area="DIR"] .ph{border-color:rgba(70,211,255,.4)}
+.card[data-area="FACILIDADES"] .ph{border-color:rgba(167,139,250,.4)}
+.card[data-area="MATERIALES"] .ph{border-color:rgba(255,140,66,.4)}
+.card[data-area="TRANSVERSAL"] .ph{border-color:rgba(39,210,156,.4)}
+.card[data-area="IDA"] .ph{border-color:rgba(247,185,85,.4)}
+.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.info{flex:1;min-width:0}
+.nm{
+    font-size:18px;
+    font-weight:700;
+    color:var(--text);
+    line-height:1.2;
+    margin-bottom:3px;
+    text-transform:capitalize;
+    padding-right:90px;
+}
+.role{font-size:11px;font-weight:600;color:var(--acc);display:flex;align-items:center;gap:7px;margin-bottom:5px}
+.card[data-area="FACILIDADES"] .role{color:var(--ext)}
+.card[data-area="MATERIALES"] .role{color:var(--mat)}
+.card[data-area="TRANSVERSAL"] .role{color:var(--tra)}
+.card[data-area="IDA"] .role{color:var(--ida)}
+.role .dot{width:3px;height:3px;border-radius:50%;background:var(--muted)}
+.role .ar{color:var(--text-2);font-weight:500;font-size:10px;letter-spacing:.6px}
+.meta{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:4px}
+.meta .m{font-size:9.5px;color:var(--text-2);background:rgba(255,255,255,.04);padding:1px 7px;border-radius:5px;border:1px solid rgba(255,255,255,.05)}
+.meta .turno{font-weight:700}
+.meta .t-1{color:#46d3ff;border-color:rgba(70,211,255,.3)}
+.meta .t-2{color:#a78bfa;border-color:rgba(167,139,250,.3)}
+.meta .t-3{color:#27d29c;border-color:rgba(39,210,156,.3)}
+.meta .t-4{color:#ff8c42;border-color:rgba(255,140,66,.3)}
+.meta .t-1C{color:#46d3ff;border-color:rgba(70,211,255,.3)}
+.meta .t-2C{color:#a78bfa;border-color:rgba(167,139,250,.3)}
+.meta .t-1M{color:#f7b955;border-color:rgba(247,185,85,.3)}
+.meta .t-2M{color:#ff8c42;border-color:rgba(255,140,66,.3)}
+.meta .t-3M{color:#27d29c;border-color:rgba(39,210,156,.3)}
+.ruta{font-size:10px;color:var(--muted);font-style:italic}
+
+.empty{padding:60px 30px;text-align:center;color:var(--muted)}
+footer{margin-top:36px;padding-top:18px;border-top:1px solid var(--border);color:var(--muted);font-size:11px;text-align:center}
+
+/* ===== MODAL ===== */
+.modal-back{position:fixed;inset:0;background:rgba(3,5,11,.78);backdrop-filter:blur(7px);z-index:998;opacity:0;pointer-events:none;transition:opacity .22s}
+.modal-back.open{opacity:1;pointer-events:auto}
+.modal{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(.92);opacity:0;pointer-events:none;width:min(560px,94vw);max-height:90vh;background:linear-gradient(180deg,#161f38 0%,#0c1428 100%);border:1px solid var(--border);border-radius:18px;z-index:999;transition:.24s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;overflow:hidden;box-shadow:0 30px 90px rgba(0,0,0,.75)}
+.modal.open{opacity:1;pointer-events:auto;transform:translate(-50%,-50%) scale(1)}
+.modal-banner{height:90px;position:relative;overflow:visible;flex-shrink:0}
+.modal-banner::before{border-radius:18px 18px 0 0}
+.modal-banner::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,var(--acc),var(--ext));opacity:.85}
+.modal[data-a="FACILIDADES"] .modal-banner::before{background:linear-gradient(135deg,#a78bfa,#7c3aed)}
+.modal[data-a="MATERIALES"] .modal-banner::before{background:linear-gradient(135deg,#ff8c42,#e07c2f)}
+.modal[data-a="TRANSVERSAL"] .modal-banner::before{background:linear-gradient(135deg,#27d29c,#10b981)}
+.modal[data-a="IDA"] .modal-banner::before{background:linear-gradient(135deg,#f7b955,#d97706)}
+.modal[data-a="ECOPETROL"] .modal-banner::before{background:linear-gradient(135deg,#FFD700,#B8860B)}
+.modal[data-a="DIR"] .modal-banner::before{background:linear-gradient(135deg,#46d3ff,#1F77B4)}
+.modal-close{position:absolute;top:12px;right:14px;background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.18);color:#fff;width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:16px;font-weight:700;z-index:5;transition:.15s;display:flex;align-items:center;justify-content:center;line-height:1}
+.modal-close:hover{background:rgba(255,107,107,.5);transform:rotate(90deg)}
+.modal-photo{position:absolute;left:50%;bottom:-110px;transform:translateX(-50%);width:200px;height:200px;border-radius:50%;border:4px solid #161f38;overflow:hidden;background:#0d1426;z-index:3;box-shadow:0 8px 24px rgba(0,0,0,.5);display:flex;align-items:center;justify-content:center}
+.modal-photo img{width:100%;height:100%;object-fit:cover;object-position:center 22%;display:block}
+.modal-body{padding:128px 26px 24px;text-align:center;overflow-y:auto}
+.modal-name{font-size:20px;font-weight:800;color:var(--text);margin-bottom:5px;letter-spacing:.2px;text-transform:capitalize}
+.modal-espec{font-size:13px;font-weight:600;color:var(--acc);margin-bottom:14px;letter-spacing:.5px}
+.modal[data-a="FACILIDADES"] .modal-espec{color:var(--ext)}
+.modal[data-a="MATERIALES"] .modal-espec{color:var(--mat)}
+.modal[data-a="TRANSVERSAL"] .modal-espec{color:var(--tra)}
+.modal[data-a="IDA"] .modal-espec{color:var(--ida)}
+.modal[data-a="ECOPETROL"] .modal-espec{color:var(--ecp)}
+.modal-area-tag{display:inline-block;padding:5px 14px;border-radius:20px;font-size:10.5px;font-weight:800;letter-spacing:1.5px;background:rgba(70,211,255,.12);color:var(--acc);border:1px solid rgba(70,211,255,.3);margin-bottom:18px}
+.modal[data-a="FACILIDADES"] .modal-area-tag{background:rgba(167,139,250,.12);color:var(--ext);border-color:rgba(167,139,250,.3)}
+.modal[data-a="MATERIALES"] .modal-area-tag{background:rgba(255,140,66,.12);color:var(--mat);border-color:rgba(255,140,66,.3)}
+.modal[data-a="TRANSVERSAL"] .modal-area-tag{background:rgba(39,210,156,.12);color:var(--tra);border-color:rgba(39,210,156,.3)}
+.modal[data-a="IDA"] .modal-area-tag{background:rgba(247,185,85,.12);color:var(--ida);border-color:rgba(247,185,85,.3)}
+.modal[data-a="ECOPETROL"] .modal-area-tag{background:rgba(255,215,0,.12);color:var(--ecp);border-color:rgba(255,215,0,.3)}
+.modal-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;text-align:left;margin-top:6px}
+.modal-grid .field{background:rgba(255,255,255,.025);border:1px solid var(--border);border-radius:9px;padding:10px 12px}
+.modal-grid .field.full{grid-column:1 / -1}
+.modal-grid .k{font-size:9.5px;color:var(--text-2);text-transform:uppercase;letter-spacing:.9px;font-weight:700;margin-bottom:3px}
+.modal-grid .v{font-size:13px;color:var(--text);font-weight:600;word-break:break-word}
+.modal-grid .field.turno .v{font-size:18px;font-weight:800}
+.modal-grid .field.turno.t-1 .v{color:var(--acc)}
+.modal-grid .field.turno.t-2 .v{color:var(--ext)}
+.modal-grid .field.turno.t-3 .v{color:var(--tra)}
+.modal-grid .field.turno.t-4 .v{color:var(--mat)}
+.modal-hint{font-size:10px;color:var(--muted);margin-top:14px;font-style:italic}
+body.modal-open{overflow:hidden}
+
+/* ===== VISTA JERÁRQUICA (organigrama estilo Excel) ===== */
+.view-toggle{display:inline-flex;gap:4px;background:var(--panel2);border:1px solid var(--border);border-radius:9px;padding:3px;margin-left:auto}
+.view-toggle button{background:transparent;border:none;color:var(--text-2);padding:7px 16px;font-size:11.5px;font-weight:700;letter-spacing:.5px;cursor:pointer;border-radius:6px;text-transform:uppercase;transition:.15s;font-family:inherit}
+.view-toggle button.act{background:var(--acc);color:#0a0f1e}
+.view-toggle button:not(.act):hover{color:var(--acc)}
+
+#flatView, #treeView{display:none}
+#flatView.show, #treeView.show{display:block}
+
+/* Top nivel: Integrador */
+.tree-top{text-align:center;margin:14px 0 0}
+.tree-int{display:inline-block;padding:11px 24px;background:linear-gradient(135deg,#1F3864,#46d3ff44);color:#fff;font-weight:800;font-size:14px;letter-spacing:1.2px;border:2px solid var(--acc);border-radius:10px;box-shadow:0 6px 18px rgba(70,211,255,.18)}
+.tree-int .small{font-size:9.5px;color:var(--text-2);letter-spacing:1.5px;font-weight:600;display:block;margin-bottom:2px}
+.tree-connector{width:2px;height:24px;background:linear-gradient(180deg,var(--acc),transparent);margin:0 auto}
+
+/* Nivel coordinacion */
+.tree-coord-label{text-align:center;font-size:10px;color:var(--text-2);text-transform:uppercase;letter-spacing:1.8px;font-weight:700;margin:0 0 12px}
+.tree-coord{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;position:relative;margin-bottom:8px}
+.tree-coord::before{content:"";position:absolute;top:-12px;left:18%;right:18%;height:2px;background:linear-gradient(90deg,transparent,rgba(167,139,250,.5),rgba(167,139,250,.5),transparent)}
+
+/* Nivel Equipos por especialidad */
+.tree-tboxes-label{text-align:center;font-size:10px;color:var(--text-2);text-transform:uppercase;letter-spacing:1.8px;font-weight:700;margin:26px 0 12px;position:relative}
+.tree-tboxes-label::before{content:"";position:absolute;top:-18px;left:50%;width:2px;height:14px;background:rgba(70,211,255,.4);transform:translateX(-50%)}
+.tree-tboxes{display:flex;flex-direction:column;gap:24px;position:relative;margin-top:6px}
+.tree-tboxes::before{content:"";position:absolute;top:-12px;left:50%;width:2px;height:14px;background:rgba(70,211,255,.5);transform:translateX(-50%)}
+
+/* Cada fila del organigrama */
+.trow{display:grid;gap:13px;position:relative;padding-top:14px}
+.trow::before{content:"";position:absolute;top:0;left:5%;right:5%;height:2px;background:linear-gradient(90deg,transparent,rgba(70,211,255,.35) 10%,rgba(70,211,255,.35) 90%,transparent)}
+.trow:first-child::before{background:linear-gradient(90deg,transparent,rgba(70,211,255,.5),rgba(70,211,255,.5),transparent)}
+
+.tbox{background:var(--panel);border:1px solid var(--border);border-radius:12px;overflow:hidden;position:relative;display:flex;flex-direction:column;min-height:130px}
+.tbox::before{content:"";position:absolute;top:-14px;left:50%;width:2px;height:14px;background:var(--c);transform:translateX(-50%);opacity:.7}
+.tempty{padding:14px 6px;text-align:center;color:var(--muted);font-size:10px;font-style:italic}
+.tbox-head{padding:11px 14px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border)}
+.tbox-head .tname{font-size:12.5px;font-weight:800;color:#fff;letter-spacing:.6px;text-transform:uppercase}
+.tbox-head .tcnt{background:rgba(255,255,255,.08);color:var(--c);font-weight:800;font-size:11.5px;padding:3px 10px;border-radius:14px;min-width:28px;text-align:center;border:1px solid var(--border)}
+.tbody{padding:9px 11px 11px}
+.tsec{margin-top:7px}
+.tsec:first-child{margin-top:2px}
+.tlbl{font-size:9px;color:var(--muted);text-transform:uppercase;letter-spacing:1.2px;font-weight:700;margin:4px 2px 6px;border-left:3px solid var(--c);padding-left:7px}
+.tlist{display:flex;flex-direction:column;gap:5px}
+
+/* Mini card */
+.mcard{display:flex;align-items:center;gap:9px;background:rgba(255,255,255,.025);border:1px solid var(--border);border-radius:8px;padding:6px 9px;cursor:pointer;transition:.13s;outline:none}
+.mcard:hover{background:rgba(255,255,255,.06);border-color:var(--c);transform:translateX(2px)}
+.mcard:focus{border-color:var(--c);box-shadow:0 0 0 2px rgba(70,211,255,.3)}
+.mph{width:34px;height:34px;border-radius:50%;overflow:hidden;flex-shrink:0;border:1.5px solid var(--c);background:#222}
+.mph img{width:100%;height:100%;object-fit:cover;display:block}
+.mi{flex:1;min-width:0;overflow:hidden}
+.mn{font-size:11.5px;font-weight:700;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:1.15}
+.mr{font-size:9.5px;color:var(--text-2);font-weight:600;margin-top:1px;letter-spacing:.3px}
+
+/* Coordinador cards en tree view */
+.coord-mini{display:flex;align-items:center;gap:10px;background:linear-gradient(135deg,#1b264a,#231d4d);border:1.5px solid rgba(167,139,250,.5);border-radius:10px;padding:9px 14px;cursor:pointer;transition:.15s;outline:none;position:relative;min-width:200px}
+.coord-mini:hover{transform:translateY(-2px);border-color:#a78bfa;box-shadow:0 6px 18px rgba(167,139,250,.22)}
+.coord-mini::after{content:"COORD";position:absolute;top:5px;right:6px;font-size:7.5px;font-weight:800;letter-spacing:1.2px;color:#a78bfa;background:rgba(167,139,250,.15);padding:1px 6px;border-radius:4px}
+.coord-mini .mph{width:42px;height:42px;border-color:#a78bfa}
+.coord-mini .mn{font-size:12.5px}
+.coord-mini .mr{color:#a78bfa;font-weight:700}
+
+@media(max-width:780px){
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .grid{grid-template-columns:1fr}
+}
+	
+	/* ===== AUMENTAR TAMAÑO EQUIPOS ORGANIGRAMA ===== */
+
+.trow{
+    grid-template-columns: repeat(4, minmax(320px, 1fr)) !important;
+    gap:20px;
+}
+
+.tbox{
+    min-height:260px;
+    border-radius:14px;
+}
+
+.tbox-head{
+    padding:16px 18px;
+}
+
+.tbox-head .tname{
+    font-size:15px;
+}
+
+.tbox-head .tcnt{
+    font-size:14px;
+}
+
+.tbody{
+    padding:14px;
+}
+
+/* Tarjetas internas de personas */
+.mcard{
+    padding:10px 12px;
+    gap:12px;
+}
+
+.mph{
+    width:55px;
+    height:55px;
+}
+
+.mn{
+    font-size:13px;
+}
+
+.mr{
+    font-size:11px;
+}
+	
+	
+ {
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="hero">
+  <div>
+    <h1>Organigrama ATIP · Rubiales</h1>
+    <div class="sub">Equipo de comisionamiento ECP-CSE M4 · 73 APPLUS+ · 5 Ecopetrol · corte 06 de Julio de 2026</div>
+  </div>
+  <div class="hero-right">
+    <div class="big">78</div>
+    <div class="lbl">Total integrantes</div>
+  </div>
+</div>
+
+<div class="kpis">
+  <div class="kpi k-ecp" style="--acc:var(--ecp)"><div class="lbl">Ecopetrol</div><div class="val" style="color:var(--ecp)">5</div><div class="sub">cliente / interventoría</div></div>
+  <div class="kpi k-est"><div class="lbl">POZOS</div><div class="val">25</div><div class="sub">Infill/Troncales</div></div>
+  <div class="kpi k-ext"><div class="lbl">FACILIDADES</div><div class="val">18</div><div class="sub">CPF-1 /CPF-2 / Sincronismo </div></div>
+  <div class="kpi k-mat"><div class="lbl">Materiales</div><div class="val">10</div><div class="sub">Control de Materiales</div></div>
+  <div class="kpi k-tra"><div class="lbl">Transversal</div><div class="val">12</div><div class="sub">Planeación/ Certificación / HSE / KPI</div></div>
+  <div class="kpi k-ida"><div class="lbl">IDA</div><div class="val">5</div><div class="sub">Integridad de Activos</div></div>
+</div>
+
+<div class="filterbar">
+  <input type="text" id="search" placeholder="🔍 Buscar por nombre, cargo o especialidad..." style="flex:1;min-width:240px">
+  <div class="view-toggle">
+    <button id="vTree" class="act" onclick="setView('tree')">Organigrama</button>
+    <button id="vFlat" onclick="setView('flat')">Por área</button>
+  </div>
+  <span class="chip act" data-a="ALL" onclick="filtrarArea(this)">Todos · 78</span>
+  <span class="chip" data-a="ECOPETROL" onclick="filtrarArea(this)">Ecopetrol</span>
+  <span class="chip" data-a="ESTACIONES" onclick="filtrarArea(this)">Infill</span>
+  <span class="chip" data-a="EXTERIORES" onclick="filtrarArea(this)">Facilidades</span>
+  <span class="chip" data-a="MATERIALES" onclick="filtrarArea(this)">Materiales</span>
+  <span class="chip" data-a="TRANSVERSAL" onclick="filtrarArea(this)">Transversal</span>
+  <span class="chip" data-a="IDA" onclick="filtrarArea(this)">IDA</span>
+	 <span class="chip" data-a="IDA" onclick="filtrarArea(this)">TECNICOS</span>
+</div>
+
+<!-- ============ VISTA ORGANIGRAMA JERARQUICO ============ -->
+
+	<div class="ecp-wrap">
+
+    <h2>Cliente · Ecopetrol S.A.</h2>
+
+    <!-- NIVEL 1 -->
+    <div class="ecp-head-main">
+
+        <div class="card"
+             data-area="ECOPETROL"
+             data-espec="INTEGRADOR ATIP"
+             data-cargo="INTEGRADOR ATIP"
+             data-nombre="JUAN PABLO SUAREZ"
+             data-extra-areas="DIR,MATERIALES,TRANSVERSAL,IDA,EXTERIORES"
+             data-cc="ECP"
+             data-ruta="Ecopetrol"
+             data-turno="-"
+             data-foto="Fotos/foto.jpg"
+             tabindex="0"
+             onclick="abrirModal(this)"
+             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+            <div class="ph">
+                <img src="Fotos/foto.jpg">
+            </div>
+
+            <div class="info">
+                <div class="nm">JUAN PABLO SUAREZ</div>
+
+                <div class="role">
+                    INTEGRADOR ATIP
+                    <span class="dot"></span>
+                    <span class="ar">ECOPETROL</span>
+                </div>
+
+                <div class="meta">
+                    <span class="m">CC ECP</span>
+                    <span class="m">JEFE</span>
+                    <span class="m turno t-x">T -</span>
+                </div>
+
+                <div class="ruta">Ecopetrol</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="tree-connector-main"></div>
+
+    <!-- NIVEL 2 -->
+    <div class="ecp-head">
+
+        <div class="card"
+             data-area="ECOPETROL"
+             data-espec="INTEGRADOR ATIP"
+             data-cargo="INTEGRADOR ATIP"
+             data-nombre="LUIS FERNANDO PONTON"
+             data-extra-areas="DIR,MATERIALES,TRANSVERSAL,IDA,EXTERIORES"
+             data-cc="ECP"
+             data-ruta="Ecopetrol"
+             data-turno="-"
+             data-foto="Fotos/foto.jpg"
+             tabindex="0"
+             onclick="abrirModal(this)"
+             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+            <div class="ph">
+   		 <img src="Fotos/foto.jpg">
+			</div>
+
+            <div class="info">
+                <div class="nm">LUIS FERNANDO PONTON</div>
+                <div class="role">
+                    LIDER ATIP
+                    <span class="dot"></span>
+                    <span class="ar">ECOPETROL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card"
+            data-area="ECOPETROL"
+             data-espec="INTEGRADOR ATIP"
+             data-cargo="INTEGRADOR ATIP"
+             data-nombre="LEONARDO BRAVO"
+             data-extra-areas="DIR,MATERIALES,TRANSVERSAL,IDA,EXTERIORES"
+             data-cc="ECP"
+             data-ruta="Ecopetrol"
+             data-turno="-"
+             data-foto="Fotos/foto.jpg"
+             tabindex="0"
+             onclick="abrirModal(this)"
+             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+            <div class="ph">
+                <img src="Fotos/foto.jpg">
+            </div>
+
+            <div class="info">
+                <div class="nm">LEONARDO ARTURO BRAVO</div>
+                <div class="role">
+                    LIDER ATIP
+                    <span class="dot"></span>
+                    <span class="ar">ECOPETROL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card"
+             data-area="ECOPETROL"
+             data-espec="INTEGRADOR ATIP"
+             data-cargo="INTEGRADOR ATIP"
+             data-nombre="JHONATAN GUERRERO"
+             data-extra-areas="DIR,MATERIALES,TRANSVERSAL,IDA,ESTACIONES"
+             data-cc="ECP"
+             data-ruta="Ecopetrol"
+             data-turno="-"
+             data-foto="Fotos/foto.jpg"
+             tabindex="0"
+             onclick="abrirModal(this)"
+             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+            <div class="ph">
+                <img src="Fotos/foto.jpg">
+            </div>
+
+            <div class="info">
+                <div class="nm">JHONATAN GUERRERO</div>
+                <div class="role">
+                    LIDER ATIP
+                    <span class="dot"></span>
+                    <span class="ar">ECOPETROL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card"
+              data-area="ECOPETROL"
+             data-espec="INTEGRADOR ATIP"
+             data-cargo="INTEGRADOR ATIP"
+             data-nombre="JORGE ARTURO"
+             data-extra-areas="DIR,MATERIALES,TRANSVERSAL,IDA,ESTACIONES"
+             data-cc="ECP"
+             data-ruta="Ecopetrol"
+             data-turno="-"
+             data-foto="Fotos/foto.jpg"
+             tabindex="0"
+             onclick="abrirModal(this)"
+             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+            <div class="ph">
+                <img src="">
+            </div>
+
+            <div class="info">
+                <div class="nm">JORGE ARTURO</div>
+                <div class="role">
+                    LIDER ATIP
+                    <span class="dot"></span>
+                    <span class="ar">ECOPETROL</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card"
+          data-area="ECOPETROL"
+             data-espec="INTEGRADOR ATIP"
+             data-cargo="INTEGRADOR ATIP"
+             data-nombre="JORGE ENRIQUE MARIÑO PEREZ"
+             data-extra-areas="DIR,MATERIALES,TRANSVERSAL,IDA,ESTACIONES"
+             data-cc="ECP"
+             data-ruta="Ecopetrol"
+             data-turno="-"
+             data-foto="Fotos/foto.jpg"
+             tabindex="0"
+             onclick="abrirModal(this)"
+             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+            <div class="ph">
+                <img src="">
+            </div>
+
+            <div class="info">
+                <div class="nm">JORGE ENRIQUE MARIÑO PEREZ</div>
+                <div class="role">
+                    INTEGRADOR MATERIALES
+                    <span class="dot"></span>
+                    <span class="ar">ECOPETROL</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+	
+<!-- =========================================================
+     NIVEL COORDINADORES
+========================================================= -->
+
+<div class="tree-level">
+
+  <div class="trow"
+       data-row="1"
+       style="
+         display:flex;
+         justify-content:center;
+         align-items:flex-start;
+         gap:24px;
+         flex-wrap:wrap;
+       ">
+
+    <!-- =====================================================
+         EQUIPO COORDINADOR FACILIDADES
+    ====================================================== -->
+    <div class="tbox"
+         style="--c:#8b5cf6;width:320px;max-width:320px;">
+
+      <div class="tbox-head"
+           style="background:linear-gradient(135deg,#8b5cf622,#8b5cf633);border-color:#8b5cf666">
+        <div class="tname">EQUIPO COORDINADOR FACILIDADES</div>
+        <div class="tcnt">2</div>
+      </div>
+
+      <div class="tbody">
+        <div class="tlist">
+
+          <!-- 1 -->
+          <div class="mcard"
+               data-area="EXTERIORES"
+               data-espec="COORDINACIÓN"
+               data-cargo="COORDINADOR"
+               data-nombre="LEONARDO BASTO"
+               data-cc=""
+               data-ruta=""
+               data-turno=""
+               data-foto=""
+               tabindex="0"
+               onclick="abrirModal(this)"
+               onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+            <div class="mph">
+              <img src="" alt="">
+            </div>
+
+            <div class="mi">
+              <div class="mn">Leonardo Basto</div>
+              <div class="mr">COORDINADOR - FACILIDADES</div>
+            </div>
+
+          </div>
+
+          <!-- 2 -->
+          <div class="mcard"
+               data-area="EXTERIORES"
+               data-espec="COORDINACIÓN"
+               data-cargo="COORDINADOR"
+               data-nombre="CARLOS HUMBERTO MERCADO"
+               data-cc=""
+               data-ruta=""
+               data-turno=""
+               data-foto=""
+               tabindex="0"
+               onclick="abrirModal(this)"
+               onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+            <div class="mph">
+              <img src="" alt="">
+            </div>
+
+            <div class="mi">
+              <div class="mn">Carlos Humberto Mercado</div>
+              <div class="mr">COORDINADOR - FACILIDADES</div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- =====================================================
+         COORDINADORES DE CAMPAÑA
+    ====================================================== -->
+    <div class="tbox"
+         style="--c:#22c55e;width:320px;max-width:320px;">
+
+      <div class="tbox-head"
+           style="background:linear-gradient(135deg,#22c55e22,#22c55e33);border-color:#22c55e66">
+        <div class="tname">COORDINADORES DE CAMPAÑA</div>
+        <div class="tcnt">2</div>
+      </div>
+
+      <div class="tbody">
+        <div class="tlist">
+
+          <!-- 1 -->
+          <div class="mcard"
+               data-area="ESTACIONES"
+               data-espec="COORDINACIÓN DE CAMPAÑA"
+               data-cargo="COORDINADOR DE CAMPAÑA"
+               data-nombre="GIOVANNY ESNEYDER ARIAS CLAVIJO"
+               data-cc=""
+               data-ruta=""
+               data-turno=""
+               data-foto=""
+               tabindex="0"
+               onclick="abrirModal(this)"
+               onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+            <div class="mph">
+              <img src="" alt="">
+            </div>
+
+            <div class="mi">
+              <div class="mn">Giovanny Esneyder Arias Clavijo</div>
+              <div class="mr">COORDINADOR DE CAMPAÑA</div>
+            </div>
+
+          </div>
+
+          <!-- 2 -->
+          <div class="mcard"
+               data-area="ESTACIONES"
+               data-espec="COORDINACIÓN DE CAMPAÑA"
+               data-cargo="COORDINADOR DE CAMPAÑA"
+               data-nombre="ERICK MANUEL RODRIGUEZ SARMIENTO"
+               data-cc=""
+               data-ruta=""
+               data-turno=""
+               data-foto=""
+               tabindex="0"
+               onclick="abrirModal(this)"
+               onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+            <div class="mph">
+              <img src="" alt="">
+            </div>
+
+            <div class="mi">
+              <div class="mn">Erick Manuel Rodríguez Sarmiento</div>
+              <div class="mr">COORDINADOR DE CAMPAÑA</div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<div class="tree-connector"></div>
+
+
+	<!-- NIVEL 5 -->
+<div class="tree-tboxes-label">
+    Planeación y Certificación
+</div>
+
+<div class="tree-tboxes">
+
+   <div class="trow" data-row="0"
+     style="
+        display:flex;
+        justify-content:center;
+        gap:20px;
+        flex-wrap:wrap;
+     ">
+
+       <!-- ================== EQUIPO PLANEACIÓN ================== -->
+<div class="tbox" style="--c:#3b82f6">
+
+  <div class="tbox-head"
+       style="background:linear-gradient(135deg,#3b82f622,#3b82f633);border-color:#3b82f666">
+    <div class="tname">EQUIPO PLANEACIÓN</div>
+    <div class="tcnt">3</div>
+  </div>
+
+  <div class="tbody">
+    <div class="tlist">
+
+      <!-- 1 -->
+      <div class="mcard"
+           data-area="EXTERIORES"
+           data-espec="PLANEACION"
+           data-cargo="PLANEADOR"
+           data-nombre="MARIO ANDRES PEDROZO LANZIANO"
+           data-cc="13850433"
+           data-ruta="Bog - Mor - Vco"
+           data-turno="COMM"
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Mario Andres Pedrozo Lanziano</div>
+          <div class="mr">PLANEACIÓN</div>
+        </div>
+
+      </div>
+
+      <!-- 2 -->
+      <div class="mcard"
+           data-area="ESTACIONES"
+           data-espec="PLANEACION"
+           data-cargo="PLANEADOR"
+           data-nombre="LICET MARTINEZ BAUTISTA"
+           data-cc="63472479"
+           data-ruta="Bog - Mor - Bog"
+           data-turno="COMM"
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Licet Martinez Bautista</div>
+          <div class="mr">PLANEACIÓN</div>
+        </div>
+
+      </div>
+
+      <!-- 3 -->
+      <div class="mcard"
+           data-area="TRANSVERSAL,TECNICOS"
+           data-espec="PLANEACION"
+           data-cargo="PLANEADOR"
+           data-nombre="MARIO MEDINA MEDINA"
+           data-cc="74302372"
+           data-ruta="Bog - Mor - Bog"
+           data-turno="COMM"
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Mario Medina Medina</div>
+          <div class="mr">PLANEACIÓN</div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+ <!-- ================== EQUIPO DE CERTIFICACIÓN ================== -->
+<div class="tbox" style="--c:#8b5cf6">
+
+  <div class="tbox-head"
+       style="background:linear-gradient(135deg,#8b5cf622,#8b5cf633);border-color:#8b5cf666">
+    <div class="tname">EQUIPO DE CERTIFICACIÓN</div>
+    <div class="tcnt">4</div>
+  </div>
+
+  <div class="tbody">
+    <div class="tlist">
+
+      <!-- 1 -->
+      <div class="mcard"
+           data-area="TRANSVERSAL"
+           data-espec="CERTIFICACION"
+           data-cargo="CERTIFICADOR"
+           data-nombre="REMBERTO PEREZ"
+           data-cc="13851139"
+           data-ruta="Bog - Mor - Bog"
+           data-turno="COMM"
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Remberto Perez</div>
+          <div class="mr">CERTIFICACIÓN</div>
+        </div>
+
+      </div>
+
+      <!-- 2 -->
+  
+
+      <!-- 3 -->
+      <div class="mcard"
+           data-area="CERTIFICACION"
+           data-espec="CERTIFICACION"
+           data-cargo="CERTIFICADOR"
+           data-nombre="PEDRO ANDRES SANDOVAL ACUÑA"
+           data-cc="1049605394"
+           data-ruta="Bog - Mor - Bog"
+           data-turno="COMM"
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Pedro Andres Sandoval Acuña</div>
+          <div class="mr">CERTIFICACIÓN</div>
+        </div>
+
+      </div>
+
+      <!-- 4 -->
+      <div class="mcard"
+           data-area="ESTACIONES"
+           data-espec="CERTIFICACION"
+           data-cargo="CERTIFICADOR"
+           data-nombre="IRNEIS JULIO URBINA"
+           data-cc="1143331094"
+           data-ruta="Bog - Mor - Bog"
+           data-turno="COMM"
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Irneis Julio Urbina</div>
+          <div class="mr">CERTIFICACIÓN</div>
+        </div>
+
+      </div>
+  <div class="mcard"
+     data-area="ESTACIONES"
+     data-espec="CERTIFICADOR"
+     data-cargo="INGENIERO"
+     data-nombre="SALUA ISABEL MOLINA CARRILLO"
+     data-cc="1047421225"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="2"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph"><img src="" alt=""></div>
+
+  <div class="mi">
+    <div class="mn">Salua Isabel Molina Carrillo</div>
+    <div class="mr">CERTIFICADOR</div>
+  </div>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+	
+	
+<div class="tree-tboxes-label">
+    Materiales · Incorporación · Logística · HSE
+</div>
+
+<div class="trow" data-row="1" style="grid-template-columns:repeat(4,1fr)">
+
+   <!-- ================== EQUIPO DE MATERIALES ================== -->
+<div class="tbox" style="--c:#f59e0b">
+
+  <div class="tbox-head"
+       style="background:linear-gradient(135deg,#f59e0b22,#f59e0b33);border-color:#f59e0b66">
+    <div class="tname">EQUIPO DE MATERIALES</div>
+    <div class="tcnt">8</div>
+  </div>
+
+  <div class="tbody">
+    <div class="tlist">
+
+      <!-- Aquí van las 8 tarjetas mcard una debajo de otra -->
+
+      <!-- Sergio -->
+      <div class="mcard"
+           data-area="MATERIALES"
+           data-espec="MATERIALES"
+           data-cargo="MATERIALES"
+           data-nombre="SERGIO LEONIDAS LOPEZ LUENGAS"
+           data-cc=""
+           data-ruta=""
+           data-turno=""
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Sergio Leonidas Lopez Luengas</div>
+          <div class="mr">MATERIALES</div>
+        </div>
+      </div>
+
+      <!-- Carlos -->
+     <div class="mcard"
+           data-area="MATERIALES"
+           data-espec="MATERIALES"
+           data-cargo="MATERIALES"
+           data-nombre="CARLOS ALBERTO ORTEGA"
+           data-cc=""
+           data-ruta=""
+           data-turno=""
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Carlos Alberto Ortega</div>
+          <div class="mr">MATERIALES</div>
+        </div>
+      </div>
+
+      <!-- Yorman -->
+      <div class="mcard"
+           data-area="MATERIALES"
+           data-espec="MATERIALES"
+           data-cargo="MATERIALES"
+           data-nombre="Yorman Yesid Romero"
+           data-cc=""
+           data-ruta=""
+           data-turno=""
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Yorman Yesid Romero</div>
+          <div class="mr">MATERIALES</div>
+        </div>
+      </div>
+
+      <!-- José -->
+      
+		
+		  <div class="mcard"
+           data-area="MATERIALES"
+           data-espec="MATERIALES"
+           data-cargo="MATERIALES"
+           data-nombre="SERGIO LEONIDAS LOPEZ LUENGAS"
+           data-cc=""
+           data-ruta=""
+           data-turno=""
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">José Jair Lozano Piraquive</div>
+          <div class="mr">MATERIALES</div>
+        </div>
+      </div>
+		
+		
+		<div class="mcard">
+        <div class="mph"><img src="" alt=""></div>
+        <div class="mi">
+          <div class="mn"></div>
+          <div class="mr">MATERIALES</div>
+        </div>
+      </div>
+
+      <!-- Juan -->
+    
+		
+		      <div class="mcard"
+           data-area="MATERIALES"
+           data-espec="MATERIALES"
+           data-cargo="MATERIALES"
+           data-nombre="Juan David Wandurraga Santamaría"
+           data-cc=""
+           data-ruta=""
+           data-turno=""
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Juan David Wandurraga Santamaría</div>
+          <div class="mr">MATERIALES</div>
+        </div>
+      </div>
+		
+		
+		
+		
+		
+
+      <!-- Nelson -->
+
+		
+		
+				      <div class="mcard"
+           data-area="MATERIALES"
+           data-espec="MATERIALES"
+           data-cargo="MATERIALES"
+           data-nombre="Nelson Leonardo Fonseca López"
+           data-cc=""
+           data-ruta=""
+           data-turno=""
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Nelson Leonardo Fonseca López</div>
+          <div class="mr">MATERIALES</div>
+        </div>
+      </div>
+		
+		
+
+      <!-- Paola -->
+  
+
+			
+				      <div class="mcard"
+           data-area="MATERIALES"
+           data-espec="MATERIALES"
+           data-cargo="MATERIALES"
+           data-nombre="Paola Alexandra Martínez Garzón"
+           data-cc=""
+           data-ruta=""
+           data-turno=""
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Paola Alexandra Martínez Garzón</div>
+          <div class="mr">MATERIALES</div>
+        </div>
+      </div>
+		
+      <!-- Adrián -->
+  
+		
+		
+					      <div class="mcard"
+           data-area="MATERIALES"
+           data-espec="MATERIALES"
+           data-cargo="MATERIALES"
+           data-nombre="Adrián Josué Rojas Ortiz"
+           data-cc=""
+           data-ruta=""
+           data-turno=""
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Adrián Josué Rojas Ortiz</div>
+          <div class="mr">MATERIALES</div>
+        </div>
+      </div>
+		
+		
+
+    </div>
+  </div>
+
+</div>
+	
+	
+    <!-- INCORPORACION -->
+    <div class="tbox" style="--c:#f7b955">
+        <div class="tbox-head" style="background:linear-gradient(135deg,#f7b95522,#f7b95533)">
+            <div class="tname">EQUIPO INCORPORACIÓN</div>
+            <div class="tcnt">6</div>
+        </div>
+
+        <div class="tbody">
+            <div class="tlist">
+
+                <div class="mcard">
+                    <div class="mi">
+                        <div class="mn">Diego Polanco Coronado</div>
+                        <div class="mr">Incorporación de Activos</div>
+                    </div>
+                </div>
+
+                <div class="mcard">
+                    <div class="mi">
+                        <div class="mn">Guillermo Andrés Colina Ortiz</div>
+                        <div class="mr">Incorporación de Activos</div>
+                    </div>
+                </div>
+
+                <div class="mcard">
+                    <div class="mi">
+                        <div class="mn">Lisa Saavedra Moreno</div>
+                        <div class="mr">Incorporación de Activos</div>
+                    </div>
+                </div>
+
+                <div class="mcard">
+                    <div class="mi">
+                        <div class="mn">Luis Guillermo Romero</div>
+                        <div class="mr">Incorporación de Activos</div>
+                    </div>
+                </div>
+
+                <div class="mcard">
+                    <div class="mi">
+                        <div class="mn">Saint Arteaga Hernández</div>
+                        <div class="mr">Incorporación de Activos</div>
+                    </div>
+                </div>
+
+                <div class="mcard">
+                    <div class="mi">
+                        <div class="mn">Juan Carlos López</div>
+                        <div class="mr">Incorporación de Activos</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-- ================== EQUIPO LOGÍSTICA ================== -->
+<div class="tbox" style="--c:#27d29c">
+
+  <div class="tbox-head"
+       style="background:linear-gradient(135deg,#27d29c22,#27d29c33);border-color:#27d29c66">
+    <div class="tname">EQUIPO LOGÍSTICA</div>
+    <div class="tcnt">1</div>
+  </div>
+
+  <div class="tbody">
+    <div class="tlist">
+
+      <div class="mcard"
+           data-area="LOGISTICA"
+           data-espec="LOGISTICA"
+           data-cargo="LOGISTICA"
+           data-nombre="DARWIN ALEXANDER RIVAS CUESTA"
+           data-cc=""
+           data-ruta=""
+           data-turno="COMM"
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Darwin Alexander Rivas Cuesta</div>
+          <div class="mr">LOGÍSTICA</div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+   <!-- ================== EQUIPO HSE ================== -->
+<div class="tbox" style="--c:#10b981">
+
+  <div class="tbox-head"
+       style="background:linear-gradient(135deg,#10b98122,#10b98133);border-color:#10b98166">
+    <div class="tname">EQUIPO HSE</div>
+    <div class="tcnt">2</div>
+  </div>
+
+  <div class="tbody">
+    <div class="tlist">
+
+      <!-- 1 -->
+      <div class="mcard"
+           data-area="HSE"
+           data-espec="HSE"
+           data-cargo="HSE"
+           data-nombre="MARIA DEL PILAR GARCIA RODRIGUEZ"
+           data-cc=""
+           data-ruta=""
+           data-turno="COMM"
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Maria del Pilar Garcia Rodriguez</div>
+          <div class="mr">HSE</div>
+        </div>
+
+      </div>
+
+      <!-- 2 VACANTE -->
+      <div class="mcard"
+           data-area="HSE"
+           data-espec="HSE"
+           data-cargo="VACANTE"
+           data-nombre="VACANTE"
+           data-cc=""
+           data-ruta=""
+           data-turno=""
+           data-foto=""
+           tabindex="0">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Vacante</div>
+          <div class="mr">HSE</div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+  
+<!-- ========================================================= -->
+<!-- FILA 1 -->
+<!-- CIVIL | ELÉCTRICO | INSTRUMENTACIÓN | MECÁNICA ESTÁTICA -->
+<!-- ========================================================= -->
+
+<div class="trow" data-row="4" style="grid-template-columns:repeat(4,minmax(0,1fr))">
+
+  <!-- ================== EQUIPO CIVIL ================== -->
+
+  <div class="tbox" style="--c:#22c55e">
+
+    <div class="tbox-head"
+         style="background:linear-gradient(135deg,#22c55e22,#22c55e33);border-color:#22c55e66">
+      <div class="tname">EQUIPO CIVIL</div>
+      <div class="tcnt">3</div>
+    </div>
+
+    <div class="tbody">
+      <div class="tlist">
+
+        <div class="mcard"
+             data-area="EXTERIORES"
+             data-espec="CIVIL"
+             data-cargo="INGENIERO"
+             data-nombre="MILLER AUDENIZ MALDONADO SALCEDO"
+             data-cc="1121826320"
+             data-ruta="Bog - Mor - Vll"
+             data-turno="2"
+             data-foto=""
+             tabindex="0"
+             onclick="abrirModal(this)"
+             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+          <div class="ph">
+            <img src="" alt="">
+          </div>
+
+          <div class="mi">
+            <div class="mn">Miller Audeniz Maldonado Salcedo</div>
+            <div class="mr">CIVIL</div>
+          </div>
+
+        </div>
+
+        <div class="mcard"
+             data-area="ESTACIONES"
+             data-espec="CIVIL"
+             data-cargo="INGENIERO"
+             data-nombre="FABIO ANTONIO GUTIERREZ COLMENARES"
+             data-cc="13861537"
+             data-ruta="Bog - Mor - Bog"
+             data-turno="2"
+             data-foto=""
+             tabindex="0"
+             onclick="abrirModal(this)"
+             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+          <div class="ph">
+            <img src="" alt="">
+          </div>
+
+          <div class="mi">
+            <div class="mn">Fabio Antonio Gutierrez Colmenares</div>
+            <div class="mr">CIVIL</div>
+          </div>
+
+        </div>
+
+        <div class="mcard"
+             data-area="TRANSVERSAL"
+             data-espec="CIVIL"
+             data-cargo="INGENIERO"
+             data-nombre="WILLIAM ALEJANDRO RAMIREZ LADINO"
+             data-cc="79977123"
+             data-ruta="Bog - Mor - Bog"
+             data-turno="1"
+             data-foto=""
+             tabindex="0"
+             onclick="abrirModal(this)"
+             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+          <div class="ph">
+            <img src="" alt="">
+          </div>
+
+          <div class="mi">
+            <div class="mn">William Alejandro Ramírez Ladino</div>
+            <div class="mr">CIVIL</div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ================== EQUIPO ELÉCTRICO ================== -->
+
+  <div class="tbox" style="--c:#22c55e">
+
+    <div class="tbox-head"
+         style="background:linear-gradient(135deg,#22c55e22,#22c55e33);border-color:#22c55e66">
+      <div class="tname">EQUIPO ELECTRICO</div>
+      <div class="tcnt">14</div>
+    </div>
+
+    <div class="tbody">
+      <div class="tlist">
+		  
+		  
+		  
+		  <!-- 1 -->
+<div class="mcard"
+     data-area="EXTERIORES"
+     data-espec="ELECTRICO"
+     data-cargo="INGENIERO"
+     data-nombre="RAFAEL ASDRUVAL DEVIA GUARIN"
+     data-cc="13852690"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="2"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph"><img src="" alt=""></div>
+
+  <div class="mi">
+    <div class="mn">Rafael Asdruval Devia Guarin</div>
+    <div class="mr">ELECTRICO</div>
+  </div>
+</div>
+
+<!-- 2 -->
+<div class="mcard"
+     data-area="ESTACIONES"
+     data-espec="ELECTRICO"
+     data-cargo="INGENIERO"
+     data-nombre="LUIS ALBERTO GAONA RAMIREZ"
+     data-cc="91282218"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="2"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph"><img src="" alt=""></div>
+
+  <div class="mi">
+    <div class="mn">Luis Alberto Gaona Ramirez</div>
+    <div class="mr">ELECTRICO</div>
+  </div>
+</div>
+
+<!-- 3 -->
+<div class="mcard"
+     data-area="EXTERIORES"
+     data-espec="ELECTRICO"
+     data-cargo="INGENIERO"
+     data-nombre="IVAN DARIO CORREDOR GARCIA"
+     data-cc="1098702255"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="2"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph"><img src="" alt=""></div>
+
+  <div class="mi">
+    <div class="mn">Ivan Dario Corredor Garcia</div>
+    <div class="mr">ELECTRICO</div>
+  </div>
+</div>
+
+<!-- 4 -->
+<div class="mcard"
+     data-area="EXTERIORES"
+     data-espec="ELECTRICO"
+     data-cargo="INGENIERO"
+     data-nombre="HERNAN TARRIBA SOLANO"
+     data-cc="3806234"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="2"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph"><img src="" alt=""></div>
+
+  <div class="mi">
+    <div class="mn">Hernan Tarriba Solano</div>
+    <div class="mr">ELECTRICO</div>
+  </div>
+</div>
+
+<!-- 5 -->
+<div class="mcard"
+     data-area="EXTERIORES"
+     data-espec="ELECTRICO"
+     data-cargo="INGENIERO"
+     data-nombre="OMAR FERNANDO OSORIO NIÑO"
+     data-cc="91522825"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="2"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph"><img src="" alt=""></div>
+
+  <div class="mi">
+    <div class="mn">Omar Fernando Osorio Niño</div>
+    <div class="mr">ELECTRICO</div>
+  </div>
+</div>
+
+<!-- 6 -->
+
+
+<!-- 7 -->
+<div class="mcard"
+     data-area="EXTERIORES"
+     data-espec="ELECTRICO"
+     data-cargo="INGENIERO"
+     data-nombre="JAIRO HUMBERTO FORERO ALVARES"
+     data-cc="79652961"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="2"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph"><img src="" alt=""></div>
+
+  <div class="mi">
+    <div class="mn">Jairo Humberto Forero Alvares</div>
+    <div class="mr">ELECTRICO</div>
+  </div>
+</div>
+		  
+		  
+		  <!-- 8 -->
+<div class="mcard"
+     data-area="ESTACIONES"
+     data-espec="ELECTRICO"
+     data-cargo="INGENIERO"
+     data-nombre="GERSON FABIAN OVIEDO GALVIS"
+     data-cc="1098602851"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="2"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph"><img src="" alt=""></div>
+
+  <div class="mi">
+    <div class="mn">Gerson Fabian Oviedo Galvis</div>
+    <div class="mr">ELECTRICO</div>
+  </div>
+</div>
+
+<!-- 9 -->
+<div class="mcard"
+     data-area="EXTERIORES"
+     data-espec="ELECTRICO"
+     data-cargo="INGENIERO"
+     data-nombre="CESAR URIEL VILLAMIZAR GELVEZ"
+     data-cc="74377113"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="2"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph"><img src="" alt=""></div>
+
+  <div class="mi">
+    <div class="mn">Cesar Uriel Villamizar Gelvez</div>
+    <div class="mr">ELECTRICO</div>
+  </div>
+</div>
+
+<!-- 10 -->
+<div class="mcard"
+     data-area="EXTERIORES"
+     data-espec="ELECTRICO"
+     data-cargo="INGENIERO"
+     data-nombre="CAMILO ANDRES CHAVES BOGOTA"
+     data-cc="1121914682"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="2"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph"><img src="" alt=""></div>
+
+  <div class="mi">
+    <div class="mn">Camilo Andres Chaves Bogota</div>
+    <div class="mr">ELECTRICO</div>
+  </div>
+</div>
+
+<!-- 11 -->
+<div class="mcard"
+     data-area="EXTERIORES"
+     data-espec="ELECTRICO"
+     data-cargo="INGENIERO"
+     data-nombre="CARLOS HUMBERTO MERCADO"
+     data-cc="91425416"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="2"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph"><img src="" alt=""></div>
+
+  <div class="mi">
+    <div class="mn">Carlos Humberto Mercado</div>
+    <div class="mr">ELECTRICO</div>
+  </div>
+</div>
+
+<!-- 12 -->
+<div class="mcard"
+     data-area="ESTACIONES"
+     data-espec="ELECTRICO"
+     data-cargo="INGENIERO"
+     data-nombre="JULIO CESAR PERALTA SUAREZ"
+     data-cc="88159600"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="2"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph"><img src="" alt=""></div>
+
+  <div class="mi">
+    <div class="mn">Julio Cesar Peralta Suarez</div>
+    <div class="mr">ELECTRICO</div>
+  </div>
+</div>
+
+<!-- 13 -->
+<div class="mcard"
+     data-area="EXTERIORES"
+     data-espec="ELECTRICO"
+     data-cargo="INGENIERO"
+     data-nombre="CÁNDIDO RAMÍREZ JIMÉNEZ"
+     data-cc="91248962"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="2"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph"><img src="" alt=""></div>
+
+  <div class="mi">
+    <div class="mn">Cándido Ramírez Jiménez</div>
+    <div class="mr">ELECTRICO</div>
+  </div>
+</div>
+
+<!-- 14 -->
+<div class="mcard"
+     data-area="EXTERIORES"
+     data-espec="ELECTRICO"
+     data-cargo="INGENIERO"
+     data-nombre="JULIO CESAR PATIÑO LAROTTA"
+     data-cc="7180539"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="2"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph"><img src="" alt=""></div>
+
+  <div class="mi">
+    <div class="mn">Julio Cesar Patiño Larotta</div>
+    <div class="mr">ELECTRICO</div>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ================== EQUIPO INSTRUMENTACIÓN Y CONTROL ================== -->
+
+  <div class="tbox" style="--c:#a78bfa">
+
+    <div class="tbox-head"
+         style="background:linear-gradient(135deg,#a78bfa22,#a78bfa33);border-color:#a78bfa66">
+      <div class="tname">EQUIPO INSTRUMENTACIÓN Y CONTROL</div>
+      <div class="tcnt">12</div>
+    </div>
+
+    <div class="tbody">
+      <div class="tlist">
+		  
+		  
+		  <!-- 1 -->
+<div class="mcard"
+     data-area="EXTERIORES"
+     data-espec="CONTROL"
+     data-cargo="INGENIERO"
+     data-nombre="MARLON ALFONSO REYES FIGUEROA"
+     data-cc="13716185"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="1"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph">
+    <img src="" alt="">
+  </div>
+
+  <div class="mi">
+    <div class="mn">Marlon Alfonso Reyes Figueroa</div>
+    <div class="mr">INSTRUMENTACIÓN Y CONTROL</div>
+  </div>
+</div>
+
+<!-- 2 -->
+<div class="mcard"
+     data-area="ESTACIONES"
+     data-espec="INSTRUMENTACION Y CONTROL"
+     data-cargo="INGENIERO"
+     data-nombre="JAVIER RINCON GUAUQUE"
+     data-cc="74184604"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="1"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph">
+    <img src="" alt="">
+  </div>
+
+  <div class="mi">
+    <div class="mn">Javier Rincón Guauque</div>
+    <div class="mr">INSTRUMENTACIÓN Y CONTROL</div>
+  </div>
+</div>
+
+<!-- 3 -->
+<div class="mcard"
+     data-area="EXTERIORES"
+     data-espec="INSTRUMENTACION Y CONTROL"
+     data-cargo="INGENIERO"
+     data-nombre="ALEXANDER MANTILLA GUTIERREZ"
+     data-cc="13744438"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="1"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph">
+    <img src="" alt="">
+  </div>
+
+  <div class="mi">
+    <div class="mn">Alexander Mantilla Gutiérrez</div>
+    <div class="mr">CONTROL</div>
+  </div>
+</div>
+
+<!-- 4 -->
+<div class="mcard"
+     data-area="EXTERIORES"
+     data-espec="INSTRUMENTACION Y CONTROL"
+     data-cargo="INGENIERO"
+     data-nombre="JUAN CAMILO MUÑOZ"
+     data-cc="1061714095"
+     data-ruta="PG - Mor - Vll"
+     data-turno="2"
+     data-foto="data:image/svg+xml;utf8,..."
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph">
+    <img src="" alt="">
+  </div>
+
+  <div class="mi">
+    <div class="mn">Juan Camilo Muñoz</div>
+    <div class="mr">INSTRUMENTACIÓN Y CONTROL</div>
+  </div>
+</div>
+
+<!-- 5 -->
+<div class="mcard"
+     data-area="EXTERIORES"
+     data-espec="CONTROL"
+     data-cargo="INGENIERO"
+     data-nombre="JORGE ARMANDO OSORIO ALMANZA"
+     data-cc="84090922"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="2"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph">
+    <img src="" alt="">
+  </div>
+
+  <div class="mi">
+    <div class="mn">Jorge Armando Osorio Almanza</div>
+    <div class="mr">CONTROL</div>
+  </div>
+</div>
+
+<!-- 6 -->
+<div class="mcard"
+     data-area="ESTACIONES"
+     data-espec="INSTRUMENTACION Y CONTROL"
+     data-cargo="INGENIERO"
+     data-nombre="DANIEL HENRIQUE JINETE CARRILLO"
+     data-cc="8769136"
+     data-ruta="Bog - Mor - Vll"
+     data-turno="2"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph">
+    <img src="" alt="">
+  </div>
+
+  <div class="mi">
+    <div class="mn">Daniel Henrique Jinete Carrillo</div>
+    <div class="mr">INSTRUMENTACIÓN Y CONTROL</div>
+  </div>
+</div>
+		  
+<!-- 7 -->
+<div class="mcard"
+     data-area="EXTERIORES"
+     data-espec="INSTRUMENTACION Y CONTROL"
+     data-cargo="INGENIERO"
+     data-nombre="RONNY ALEXANDER TORO PEREIRA"
+     data-cc="94540131"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="2"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph">
+    <img src="" alt="">
+  </div>
+
+  <div class="mi">
+    <div class="mn">Ronny Alexander Toro Pereira</div>
+    <div class="mr">INSTRUMENTACIÓN Y CONTROL</div>
+  </div>
+</div>
+
+<!-- 8 -->
+<div class="mcard"
+     data-area="ESTACIONES"
+     data-espec="CONTROL"
+     data-cargo="INGENIERO"
+     data-nombre="CARLOS ANDRES TURIZO VILLA"
+     data-cc="14399292"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="1"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph">
+    <img src="" alt="">
+  </div>
+
+  <div class="mi">
+    <div class="mn">Carlos Andrés Turizo Villa</div>
+    <div class="mr">CONTROL</div>
+  </div>
+</div>
+
+<!-- 9 -->
+<div class="mcard"
+     data-area="EXTERIORES"
+     data-espec="INSTRUMENTACION Y CONTROL"
+     data-cargo="INGENIERO"
+     data-nombre="RICARDO PERDOMO"
+     data-cc="16937741"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="3"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph">
+    <img src="" alt="">
+  </div>
+
+  <div class="mi">
+    <div class="mn">Ricardo Perdomo</div>
+    <div class="mr">INSTRUMENTACIÓN Y CONTROL</div>
+  </div>
+</div>
+
+<!-- 10 -->
+<div class="mcard"
+     data-area="EXTERIORES"
+     data-espec="INSTRUMENTACION Y CONTROL"
+     data-cargo="INGENIERO"
+     data-nombre="JAVIER HERNANDO GUERRERO PICO"
+     data-cc="13745054"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="3"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph">
+    <img src="" alt="">
+  </div>
+
+  <div class="mi">
+    <div class="mn">Javier Hernando Guerrero Pico</div>
+    <div class="mr">INSTRUMENTACIÓN Y CONTROL</div>
+  </div>
+</div>
+
+<!-- 11 -->
+<div class="mcard"
+     data-area="EXTERIORES"
+     data-espec="INSTRUMENTACION Y CONTROL"
+     data-cargo="INGENIERO"
+     data-nombre="JONNATHAN IGNACIO POLO TRUJILLO"
+     data-cc="7726625"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="3"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph">
+    <img src="" alt="">
+  </div>
+
+  <div class="mi">
+    <div class="mn">Jonnathan Ignacio Polo Trujillo</div>
+    <div class="mr">INSTRUMENTACIÓN Y CONTROL</div>
+  </div>
+</div>
+
+<!-- 12 -->
+<div class="mcard"
+     data-area="ESTACIONES"
+     data-espec="INSTRUMENTACION Y CONTROL"
+     data-cargo="INGENIERO"
+     data-nombre="LEONARDO ANDRES JAIMES FAJARDO"
+     data-cc="91538504"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="3"
+     data-foto=""
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph">
+    <img src="" alt="">
+  </div>
+
+  <div class="mi">
+    <div class="mn">Leonardo Andrés Jaimes Fajardo</div>
+    <div class="mr">INSTRUMENTACIÓN Y CONTROL</div>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+		 
+	
+	<!-- ================== EQUIPO MECÁNICA ESTÁTICA ================== -->
+
+<div class="tbox" style="--c:#ff8c42">
+
+  <div class="tbox-head"
+       style="background:linear-gradient(135deg,#ff8c4222,#ff8c4233);border-color:#ff8c4266">
+    <div class="tname">EQUIPO MECÁNICA ESTÁTICA</div>
+    <div class="tcnt">3</div>
+  </div>
+
+  <div class="tbody">
+    <div class="tlist">
+
+      <!-- 1 -->
+      <div class="mcard"
+           data-area="TRANSVERSAL"
+           data-espec="MECANICA ESTATICA"
+           data-cargo="INGENIERO"
+           data-nombre="INGRID KATHERINE RODRIGUEZ CHAVEZ"
+           data-cc="1098741997"
+           data-ruta="Bog - Mor - Bog"
+           data-turno="1"
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="ph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Ingrid Katherine Rodriguez Chavez</div>
+          <div class="mr">MECÁNICA ESTÁTICA</div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="mcard"
+           data-area="TRANSVERSAL"
+           data-espec="MECANICA ESTATICA"
+           data-cargo="INGENIERO"
+           data-nombre="JOSE ALBERTO DUARTE SEPULVEDA"
+           data-cc="7226181"
+           data-ruta="Bog - Mor - Bog"
+           data-turno="1"
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="ph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Jose Alberto Duarte Sepúlveda</div>
+          <div class="mr">MECÁNICA ESTÁTICA</div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="mcard"
+           data-area="ESTACIONES"
+           data-espec="MECANICA ESTATICA"
+           data-cargo="INGENIERO"
+           data-nombre="NESTOR RUBEN CUESTAS GONZALEZ"
+           data-cc="11448152"
+           data-ruta="Bog - Mor - Bog"
+           data-turno="1"
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="ph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Nestor Ruben Cuestas Gonzalez</div>
+          <div class="mr">MECÁNICA ESTÁTICA</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<!-- FIN EQUIPO MECÁNICA ESTÁTICA -->
+		  
+	
+	<!-- ================== TÉCNICOS ELÉCTRICOS ================== -->
+<div class="tbox" style="--c:#46d3ff">
+
+  <div class="tbox-head"
+       style="background:linear-gradient(135deg,#46d3ff22,#46d3ff33);border-color:#46d3ff66">
+    <div class="tname">TÉCNICOS ELÉCTRICOS</div>
+    <div class="tcnt">3</div>
+  </div>
+
+  <div class="tbody">
+    <div class="tlist">
+
+      <!-- 1 -->
+      <div class="mcard"
+           data-area="FAC"
+           data-espec="TECNICO ELECTRICISTA"
+           data-cargo="TECNICO"
+           data-nombre="MAURICIO ANDRES VARGAS MORA"
+           data-cc="1098681450"
+           data-ruta="Bog - Mor - Vco"
+           data-turno="COMM"
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Mauricio Andres Vargas Mora</div>
+          <div class="mr">TECNICO ELECTRICISTA</div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="mcard"
+           data-area="ESTACIONES"
+           data-espec="TECNICO ELECTRICISTA"
+           data-cargo="TECNICO"
+           data-nombre="ANIBAL STIVEN GUTIERREZ GARZON"
+           data-cc="1121882130"
+           data-ruta="Bog - Mor - Vco"
+           data-turno="COMM"
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Anibal Stiven Gutiérrez Garzón</div>
+          <div class="mr">TECNICO ELECTRICISTA</div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="mcard"
+           data-area="FAC"
+           data-espec="TECNICO ELECTRICISTA"
+           data-cargo="TECNICO"
+           data-nombre="WILLIAM QUINTANA SEGURA"
+           data-cc="79455968"
+           data-ruta="Bog - Mor - Bog"
+           data-turno="COMM"
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">William Quintana Segura</div>
+          <div class="mr">TECNICO ELECTRICISTA</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+	
+	
+	<!-- ================== TÉCNICOS INSTRUMENTACIÓN & CONTROL ================== -->
+<div class="tbox" style="--c:#a78bfa">
+
+  <div class="tbox-head"
+       style="background:linear-gradient(135deg,#a78bfa22,#a78bfa33);border-color:#a78bfa66">
+    <div class="tname">TÉCNICOS INSTRUMENTACIÓN & CONTROL</div>
+    <div class="tcnt">3</div>
+  </div>
+
+  <div class="tbody">
+    <div class="tlist">
+
+      <!-- 1 -->
+      <div class="mcard"
+           data-area="EXTERIORES"
+           data-espec="INSTRUMENTACION Y CONTROL"
+           data-cargo="TECNICO"
+           data-nombre="JESUS ALBERTO RIVERA DIAZ"
+           data-cc="1083900148"
+           data-ruta="Bog - Mor - Bog"
+           data-turno="COMM"
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Jesús Alberto Rivera Díaz</div>
+          <div class="mr">INSTRUMENTACIÓN Y CONTROL</div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="mcard"
+           data-area="EXTERIORES"
+           data-espec="INSTRUMENTACION Y CONTROL"
+           data-cargo="TECNICO"
+           data-nombre="LEYDY ESPERANZA PERDOMO MENDEZ"
+           data-cc="1075219148"
+           data-ruta="Bog - Mor - Bog"
+           data-turno="COMM"
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Leydy Esperanza Perdomo Méndez</div>
+          <div class="mr">INSTRUMENTACIÓN Y CONTROL</div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="mcard"
+           data-area="EXTERIORES"
+           data-espec="INSTRUMENTACION Y CONTROL"
+           data-cargo="TECNICO"
+           data-nombre="FREDY GIOVANNI LOPEZ CLAVIJO"
+           data-cc="16114413"
+           data-ruta="Bog - Mor - Bog"
+           data-turno="COMM"
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Fredy Giovanni López Clavijo</div>
+          <div class="mr">INSTRUMENTACIÓN Y CONTROL</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+	
+	
+	<!-- ================== TÉCNICOS MECÁNICA ESTÁTICA ================== -->
+<div class="tbox" style="--c:#ff8c42">
+
+  <div class="tbox-head"
+       style="background:linear-gradient(135deg,#ff8c4222,#ff8c4233);border-color:#ff8c4266">
+    <div class="tname">TÉCNICOS MECÁNICA ESTÁTICA</div>
+    <div class="tcnt">2</div>
+  </div>
+
+  <div class="tbody">
+    <div class="tlist">
+
+      <!-- 1 -->
+      <div class="mcard"
+           data-area="TRANSVERSAL"
+           data-espec="TECNICO MECANICA ESTATICA"
+           data-cargo="TECNICO"
+           data-nombre="ALDEMAR PAEZ HERNANDEZ"
+           data-cc="1121836858"
+           data-ruta="Bog - Mor - Vco"
+           data-turno="COMM"
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Aldemar Paez Hernandez</div>
+          <div class="mr">TECNICO MECANICA ESTATICA</div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="mcard"
+           data-area="TRANSVERSAL"
+           data-espec="TECNICO MECANICA ESTATICA"
+           data-cargo="TECNICO"
+           data-nombre="CRISTIAN JOSE OROZCO CHAVEZ"
+           data-cc="1143455325"
+           data-ruta="Bog - Mor - Bog"
+           data-turno="COMM"
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Cristian Jose Orozco Chavez</div>
+          <div class="mr">TECNICO MECANICA ESTATICA</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+	
+	
+	<!-- ================== TÉCNICOS MECÁNICA ROTATIVA ================== -->
+<div class="tbox" style="--c:#ff6b6b">
+
+  <div class="tbox-head"
+       style="background:linear-gradient(135deg,#ff6b6b22,#ff6b6b33);border-color:#ff6b6b66">
+    <div class="tname">TÉCNICOS MECÁNICA ROTATIVA</div>
+    <div class="tcnt">2</div>
+  </div>
+
+  <div class="tbody">
+    <div class="tlist">
+
+      <!-- 1 -->
+      <div class="mcard"
+           data-area="TRANSVERSAL,FACILIDADES, IDA"
+           data-espec="TECNICO MECANICA ROTATIVA"
+           data-cargo="TECNICO"
+           data-nombre="ALEJANDRO CUADRADO SUAREZ"
+           data-cc="1052384643"
+           data-ruta="Bog - Mor - Bog"
+           data-turno="COMM"
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Alejandro Cuadrado Suarez</div>
+          <div class="mr">TECNICO MECANICA ROTATIVA</div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="mcard"
+           data-area="TRANSVERSAL"
+           data-espec="TECNICO MECANICA ROTATIVA"
+           data-cargo="TECNICO"
+           data-nombre="LEYDER FERNANDO RICAURTE MARTINEZ"
+           data-cc="74860476"
+           data-ruta="Bog - Mor - Vco"
+           data-turno="COMM"
+           data-foto=""
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Leyder Fernando Ricaurte Martinez</div>
+          <div class="mr">TECNICO MECANICA ROTATIVA</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+	
+	
+	
+	<!-- /treeView -->
+
+<!-- ============ VISTA POR ÁREA (flat) ============ -->
+
+
+
+
+
+<footer>APPLUS+ · Apoyo Técnico Integral a Proyectos (ATIP) · Rubiales · Generado 21-07-2026</footer>
+</div>
+
+<!-- Modal de detalle -->
+<div class="modal-back" id="modalBack" onclick="cerrarModal()"></div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="mdlName">
+  <div class="modal-banner">
+    <button class="modal-close" aria-label="Cerrar" onclick="cerrarModal()">&times;</button>
+    <div class="modal-photo">
+      <img id="mdlPhoto" src="Fotos/Mario Medina.jpeg" Fotografía"></div>
+  </div>
+  <div class="modal-body">
+    <div class="modal-name" id="mdlName">lEONARDO FABIO BASTO PEDRAZA</div>
+    <div class="modal-espec" id="mdlEspec">—</div>
+    <div class="modal-area-tag" id="mdlAreaTag">FACILIDADES</div>
+    <div class="modal-grid">
+      <div class="field"><div class="k">Cargo</div><div class="v" id="mdlCargo">—</div></div>
+      <div class="field"><div class="k">Especialidad</div><div class="v" id="mdlEspecF">—</div></div>
+      <div class="field full"><div class="k">Área de trabajo</div><div class="v" id="mdlArea">—</div></div>
+    </div>
+    <div class="modal-hint">Pulsa ESC, haz clic fuera del recuadro o en × para cerrar.</div>
+  </div>
+</div>
+
+<script>
+const areas = Array.from(document.querySelectorAll('.area'));
+const tboxes = Array.from(document.querySelectorAll('.tbox'));
+let curArea = "ALL";
+function filtrarArea(el){
+  document.querySelectorAll('.chip').forEach(c => c.classList.remove('act'));
+  el.classList.add('act');
+  curArea = el.dataset.a;
+  aplicar();
+}
+function aplicar(){
+  const q = document.getElementById('search').value.toLowerCase().trim();
+  const nodes = Array.from(document.querySelectorAll('.card, .mcard'));
+  nodes.forEach(c => {
+    const okArea = (curArea === "ALL") || (c.dataset.area === curArea) || ((c.dataset.extraAreas || '').split(',').filter(Boolean).includes(curArea));
+    const text = ((c.dataset.nombre||'') + ' ' + (c.dataset.espec||'') + ' ' + (c.dataset.cargo||'') + ' ' + (c.dataset.area||'')).toLowerCase();
+    const okQ = !q || text.includes(q);
+    c.style.display = (okArea && okQ) ? '' : 'none';
+  });
+  areas.forEach(a => {
+    const vis = Array.from(a.querySelectorAll('.card')).some(c => c.style.display !== 'none');
+    a.style.display = vis ? '' : 'none';
+  });
+  tboxes.forEach(b => {
+    const vis = Array.from(b.querySelectorAll('.mcard')).some(c => c.style.display !== 'none');
+    b.style.display = vis ? '' : 'none';
+  });
+}
+document.getElementById('search').addEventListener('input', aplicar);
+
+// ===== View toggle =====
+function setView(v){
+  const tv = document.getElementById('treeView');
+  const fv = document.getElementById('flatView');
+  const bt = document.getElementById('vTree');
+  const bf = document.getElementById('vFlat');
+  if (v === 'tree') {
+    tv.classList.add('show'); fv.classList.remove('show');
+    bt.classList.add('act');  bf.classList.remove('act');
+  } else {
+    fv.classList.add('show'); tv.classList.remove('show');
+    bf.classList.add('act');  bt.classList.remove('act');
+  }
+  aplicar();
+}
+
+// Actualizar selector de cards/areas para filtros (incluye ambas vistas)
+function refreshNodes(){
+  return Array.from(document.querySelectorAll('.card, .mcard'));
+}
+
+// ===== Modal =====
+const modalBack = document.getElementById('modalBack');
+const modal = document.getElementById('modal');
+function abrirModal(el){
+  const d = el.dataset;
+  document.getElementById('mdlPhoto').src = d.foto;
+  document.getElementById('mdlPhoto').alt = d.nombre;
+  document.getElementById('mdlName').textContent = d.nombre;
+  document.getElementById('mdlEspec').textContent = d.espec + (d.cargo ? ' · ' + d.cargo : '');
+  document.getElementById('mdlAreaTag').textContent = d.area;
+  document.getElementById('mdlCargo').textContent = d.cargo || '—';
+  document.getElementById('mdlEspecF').textContent = d.espec || '—';
+  document.getElementById('mdlArea').textContent = d.area || '—';
+  modal.dataset.a = d.area || '';
+  modalBack.classList.add('open');
+  modal.classList.add('open');
+  document.body.classList.add('modal-open');
+}
+function cerrarModal(){
+  modalBack.classList.remove('open');
+  modal.classList.remove('open');
+  document.body.classList.remove('modal-open');
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && modal.classList.contains('open')) cerrarModal();
+});
+</script>
+</body>
+</html>
