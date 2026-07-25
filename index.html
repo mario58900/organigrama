@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Organigrama Rubiales · 2026</title>
+<title>Organigrama ATIP ·Rubiales· 2026</title>
 <style>
 :root{
   --bg:#0a0f1e;--bg2:#111a30;--panel:#161f38;--panel2:#1b264a;
@@ -36,7 +36,7 @@ body{margin:0;background:var(--bg);color:var(--text);font:13.5px/1.5 'Inter','Se
 .chip{cursor:pointer;padding:6px 13px;border-radius:20px;font-size:11.5px;font-weight:600;background:rgba(255,255,255,.04);border:1px solid var(--border);color:var(--text-2);transition:.15s}
 .chip:hover{border-color:var(--acc);color:var(--acc)}
 .chip.act{color:#0a0f1e;background:var(--acc);border-color:var(--acc)}
-.chip[data-a="EXTERIORES"].act{background:var(--ext);border-color:var(--ext)}
+.chip[data-a="FACILIDADES"].act{background:var(--ext);border-color:var(--ext)}
 .chip[data-a="MATERIALES"].act{background:var(--mat);border-color:var(--mat)}
 .chip[data-a="TRANSVERSAL"].act{background:var(--tra);border-color:var(--tra)}
 .chip[data-a="IDA"].act{background:var(--ida);border-color:var(--ida)}
@@ -415,18 +415,18 @@ body.modal-open{overflow:hidden}
     <div class="sub">Equipo de comisionamiento ECP-CSE M4 · 73 APPLUS+ · 5 Ecopetrol · corte 06 de Julio de 2026</div>
   </div>
   <div class="hero-right">
-    <div class="big">78</div>
+    <div class="big">83</div>
     <div class="lbl">Total integrantes</div>
   </div>
 </div>
 
 <div class="kpis">
-  <div class="kpi k-ecp" style="--acc:var(--ecp)"><div class="lbl">Ecopetrol</div><div class="val" style="color:var(--ecp)">5</div><div class="sub">cliente / interventoría</div></div>
-  <div class="kpi k-est"><div class="lbl">POZOS</div><div class="val">25</div><div class="sub">Infill/Troncales</div></div>
-  <div class="kpi k-ext"><div class="lbl">FACILIDADES</div><div class="val">18</div><div class="sub">CPF-1 /CPF-2 / Sincronismo </div></div>
-  <div class="kpi k-mat"><div class="lbl">Materiales</div><div class="val">10</div><div class="sub">Control de Materiales</div></div>
-  <div class="kpi k-tra"><div class="lbl">Transversal</div><div class="val">12</div><div class="sub">Planeación/ Certificación / HSE / KPI</div></div>
-  <div class="kpi k-ida"><div class="lbl">IDA</div><div class="val">5</div><div class="sub">Integridad de Activos</div></div>
+  <div class="kpi k-ecp" style="--acc:var(--ecp)"><div class="lbl">Ecopetrol</div><div class="val" style="color:var(--ecp)">6&nbsp;</div><div class="sub">cliente / interventoría</div></div>
+  <div class="kpi k-est"><div class="lbl">POZOS</div><div class="val">15</div><div class="sub">Infill/Troncales</div></div>
+  <div class="kpi k-ext"><div class="lbl">FACILIDADES</div><div class="val">35</div><div class="sub">CPF-1 /CPF-2 / Sincronismo </div></div>
+  <div class="kpi k-mat"><div class="lbl">Materiales</div><div class="val">5</div><div class="sub">Control de Materiales</div></div>
+  <div class="kpi k-tra"><div class="lbl">Transversal</div><div class="val">15</div><div class="sub">Planeación/ Certificación / HSE / KPI</div></div>
+  <div class="kpi k-ida"><div class="lbl">IDA</div><div class="val">6&nbsp;</div><div class="sub">Integridad de Activos</div></div>
 </div>
 
 <div class="filterbar">
@@ -435,14 +435,14 @@ body.modal-open{overflow:hidden}
     <button id="vTree" class="act" onclick="setView('tree')">Organigrama</button>
     <button id="vFlat" onclick="setView('flat')">Por área</button>
   </div>
-  <span class="chip act" data-a="ALL" onclick="filtrarArea(this)">Todos · 78</span>
+  <span class="chip act" data-a="ALL" onclick="filtrarArea(this)">Todos · 83</span>
   <span class="chip" data-a="ECOPETROL" onclick="filtrarArea(this)">Ecopetrol</span>
-  <span class="chip" data-a="ESTACIONES" onclick="filtrarArea(this)">Infill</span>
-  <span class="chip" data-a="EXTERIORES" onclick="filtrarArea(this)">Facilidades</span>
+  <span class="chip" data-a="INFILL" onclick="filtrarArea(this)">Infill</span>
+  <span class="chip" data-a="FACILIDADES" onclick="filtrarArea(this)">Facilidades</span>
   <span class="chip" data-a="MATERIALES" onclick="filtrarArea(this)">Materiales</span>
   <span class="chip" data-a="TRANSVERSAL" onclick="filtrarArea(this)">Transversal</span>
   <span class="chip" data-a="IDA" onclick="filtrarArea(this)">IDA</span>
-	 <span class="chip" data-a="IDA" onclick="filtrarArea(this)">TECNICOS</span>
+	 <span class="chip" data-a="TECNICOS" onclick="filtrarArea(this)">TECNICOS</span>
 </div>
 
 <!-- ============ VISTA ORGANIGRAMA JERARQUICO ============ -->
@@ -459,17 +459,17 @@ body.modal-open{overflow:hidden}
              data-espec="INTEGRADOR ATIP"
              data-cargo="INTEGRADOR ATIP"
              data-nombre="JUAN PABLO SUAREZ"
-             data-extra-areas="DIR,MATERIALES,TRANSVERSAL,IDA,EXTERIORES"
+             data-extra-areas="DIR,MATERIALES,TRANSVERSAL,IDA,FACILIDADES"
              data-cc="ECP"
              data-ruta="Ecopetrol"
              data-turno="-"
-             data-foto="Fotos/foto.jpg"
+             data-foto="Fotos/Juan Pablo.jpg"
              tabindex="0"
              onclick="abrirModal(this)"
              onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
             <div class="ph">
-                <img src="Fotos/foto.jpg">
+                <img src="Fotos/Juan Pablo.jpg">
             </div>
 
             <div class="info">
@@ -504,17 +504,17 @@ body.modal-open{overflow:hidden}
              data-espec="INTEGRADOR ATIP"
              data-cargo="INTEGRADOR ATIP"
              data-nombre="LUIS FERNANDO PONTON"
-             data-extra-areas="DIR,MATERIALES,TRANSVERSAL,IDA,EXTERIORES"
+             data-extra-areas="DIR,MATERIALES,TRANSVERSAL,IDA,FACILIDADES"
              data-cc="ECP"
              data-ruta="Ecopetrol"
              data-turno="-"
-             data-foto="Fotos/foto.jpg"
+             data-foto="Fotos/LFERNANDO.jpg"
              tabindex="0"
              onclick="abrirModal(this)"
              onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
             <div class="ph">
-   		 <img src="Fotos/foto.jpg">
+   		 <img src="Fotos/LFERNANDO.jpg">
 			</div>
 
             <div class="info">
@@ -532,17 +532,17 @@ body.modal-open{overflow:hidden}
              data-espec="INTEGRADOR ATIP"
              data-cargo="INTEGRADOR ATIP"
              data-nombre="LEONARDO BRAVO"
-             data-extra-areas="DIR,MATERIALES,TRANSVERSAL,IDA,EXTERIORES"
+             data-extra-areas="DIR,MATERIALES,TRANSVERSAL,IDA,FACILIDADES"
              data-cc="ECP"
              data-ruta="Ecopetrol"
              data-turno="-"
-             data-foto="Fotos/foto.jpg"
+             data-foto="Fotos/Leonardo Bravo.jpeg"
              tabindex="0"
              onclick="abrirModal(this)"
              onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
             <div class="ph">
-                <img src="Fotos/foto.jpg">
+                <img src="Fotos/Leonardo Bravo.jpeg">
             </div>
 
             <div class="info">
@@ -560,7 +560,7 @@ body.modal-open{overflow:hidden}
              data-espec="INTEGRADOR ATIP"
              data-cargo="INTEGRADOR ATIP"
              data-nombre="JHONATAN GUERRERO"
-             data-extra-areas="DIR,MATERIALES,TRANSVERSAL,IDA,ESTACIONES"
+             data-extra-areas="DIR,MATERIALES,TRANSVERSAL,IDA,INFILL"
              data-cc="ECP"
              data-ruta="Ecopetrol"
              data-turno="-"
@@ -588,7 +588,7 @@ body.modal-open{overflow:hidden}
              data-espec="INTEGRADOR ATIP"
              data-cargo="INTEGRADOR ATIP"
              data-nombre="JORGE ARTURO"
-             data-extra-areas="DIR,MATERIALES,TRANSVERSAL,IDA,ESTACIONES"
+             data-extra-areas="DIR,MATERIALES,TRANSVERSAL,IDA,INFILL"
              data-cc="ECP"
              data-ruta="Ecopetrol"
              data-turno="-"
@@ -668,7 +668,7 @@ body.modal-open{overflow:hidden}
       <div class="tbox-head"
            style="background:linear-gradient(135deg,#8b5cf622,#8b5cf633);border-color:#8b5cf666">
         <div class="tname">EQUIPO COORDINADOR FACILIDADES</div>
-        <div class="tcnt">2</div>
+        <div class="tcnt">3</div>
       </div>
 
       <div class="tbody">
@@ -676,20 +676,20 @@ body.modal-open{overflow:hidden}
 
           <!-- 1 -->
           <div class="mcard"
-               data-area="EXTERIORES"
+               data-area="FACILIDADES"
                data-espec="COORDINACIÓN"
                data-cargo="COORDINADOR"
                data-nombre="LEONARDO BASTO"
                data-cc=""
                data-ruta=""
                data-turno=""
-               data-foto=""
+               data-foto="Fotos/Leonardo Basto"
                tabindex="0"
                onclick="abrirModal(this)"
                onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
             <div class="mph">
-              <img src="" alt="">
+              <img src="Fotos/Leonardo Basto" alt="">
             </div>
 
             <div class="mi">
@@ -701,25 +701,51 @@ body.modal-open{overflow:hidden}
 
           <!-- 2 -->
           <div class="mcard"
-               data-area="EXTERIORES"
+               data-area="FACILIDADES"
                data-espec="COORDINACIÓN"
                data-cargo="COORDINADOR"
                data-nombre="CARLOS HUMBERTO MERCADO"
                data-cc=""
                data-ruta=""
                data-turno=""
-               data-foto=""
+               data-foto="Fotos/Carlos Humberto.jpg"
                tabindex="0"
                onclick="abrirModal(this)"
                onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
             <div class="mph">
-              <img src="" alt="">
+              <img src="Fotos/Carlos Humberto.jpg" alt="">
             </div>
 
             <div class="mi">
               <div class="mn">Carlos Humberto Mercado</div>
               <div class="mr">COORDINADOR - FACILIDADES</div>
+            </div>
+
+          </div>
+			
+			
+			  <!-- 3 -->
+          <div class="mcard"
+               data-area="FACILIDADES"
+               data-espec="SYNCRONISMO"
+               data-cargo="COORDINADOR"
+               data-nombre="CAMILO ANDRÉS BELTRAN ROBLES"
+               data-cc=""
+               data-ruta=""
+               data-turno=""
+               data-foto="Fotos/Camilo Beltran.jpg"
+               tabindex="0"
+               onclick="abrirModal(this)"
+               onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+            <div class="mph">
+              <img src="Fotos/Camilo Beltran.jpg" alt="">
+            </div>
+
+            <div class="mi">
+              <div class="mn">CAMILO ANDRÉS BELTRAN ROBLES</div>
+              <div class="mr">COORDINADOR - SYNCRONISMO</div>
             </div>
 
           </div>
@@ -746,20 +772,20 @@ body.modal-open{overflow:hidden}
 
           <!-- 1 -->
           <div class="mcard"
-               data-area="ESTACIONES"
+               data-area="INFILL"
                data-espec="COORDINACIÓN DE CAMPAÑA"
                data-cargo="COORDINADOR DE CAMPAÑA"
                data-nombre="GIOVANNY ESNEYDER ARIAS CLAVIJO"
                data-cc=""
                data-ruta=""
                data-turno=""
-               data-foto=""
+               data-foto="Fotos/Giovanny Esneyder.jpg"
                tabindex="0"
                onclick="abrirModal(this)"
                onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
             <div class="mph">
-              <img src="" alt="">
+              <img src="Fotos/Giovanny Esneyder.jpg" alt="">
             </div>
 
             <div class="mi">
@@ -771,20 +797,20 @@ body.modal-open{overflow:hidden}
 
           <!-- 2 -->
           <div class="mcard"
-               data-area="ESTACIONES"
+               data-area="INFILL"
                data-espec="COORDINACIÓN DE CAMPAÑA"
                data-cargo="COORDINADOR DE CAMPAÑA"
                data-nombre="ERICK MANUEL RODRIGUEZ SARMIENTO"
                data-cc=""
                data-ruta=""
                data-turno=""
-               data-foto=""
+               data-foto="Fotos/Erick Manuel.jpg"
                tabindex="0"
                onclick="abrirModal(this)"
                onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
             <div class="mph">
-              <img src="" alt="">
+              <img src="Fotos/Erick Manuel.jpg" alt="">
             </div>
 
             <div class="mi">
@@ -835,20 +861,20 @@ body.modal-open{overflow:hidden}
 
       <!-- 1 -->
       <div class="mcard"
-           data-area="EXTERIORES"
+           data-area="FACILIDADES"
            data-espec="PLANEACION"
            data-cargo="PLANEADOR"
            data-nombre="MARIO ANDRES PEDROZO LANZIANO"
            data-cc="13850433"
            data-ruta="Bog - Mor - Vco"
            data-turno="COMM"
-           data-foto=""
+           data-foto="Fotos/Mario Andres.jpg"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="mph">
-          <img src="" alt="">
+          <img src="Fotos/Mario Andres.jpg" alt="">
         </div>
 
         <div class="mi">
@@ -860,20 +886,19 @@ body.modal-open{overflow:hidden}
 
       <!-- 2 -->
       <div class="mcard"
-           data-area="ESTACIONES"
+           data-area="INFILL"
            data-espec="PLANEACION"
            data-cargo="PLANEADOR"
            data-nombre="LICET MARTINEZ BAUTISTA"
            data-cc="63472479"
            data-ruta="Bog - Mor - Bog"
            data-turno="COMM"
-           data-foto=""
+           data-foto="Fotos/Licet Maria.png"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
-
         <div class="mph">
-          <img src="" alt="">
+          <img src="Fotos/Licet Maria.png" alt="">
         </div>
 
         <div class="mi">
@@ -885,20 +910,20 @@ body.modal-open{overflow:hidden}
 
       <!-- 3 -->
       <div class="mcard"
-           data-area="TRANSVERSAL,TECNICOS"
+           data-area="TRANSVERSAL"
            data-espec="PLANEACION"
            data-cargo="PLANEADOR"
            data-nombre="MARIO MEDINA MEDINA"
            data-cc="74302372"
            data-ruta="Bog - Mor - Bog"
            data-turno="COMM"
-           data-foto=""
+           data-foto="Fotos/Mario Medina.jpeg"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="mph">
-          <img src="" alt="">
+          <img src="Fotos/Mario Medina.jpeg" alt="">
         </div>
 
         <div class="mi">
@@ -919,7 +944,7 @@ body.modal-open{overflow:hidden}
   <div class="tbox-head"
        style="background:linear-gradient(135deg,#8b5cf622,#8b5cf633);border-color:#8b5cf666">
     <div class="tname">EQUIPO DE CERTIFICACIÓN</div>
-    <div class="tcnt">4</div>
+    <div class="tcnt">5</div>
   </div>
 
   <div class="tbody">
@@ -934,13 +959,13 @@ body.modal-open{overflow:hidden}
            data-cc="13851139"
            data-ruta="Bog - Mor - Bog"
            data-turno="COMM"
-           data-foto=""
+           data-foto="Fotos/Remberto Perez.jpg"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="mph">
-          <img src="" alt="">
+          <img src="Fotos/Remberto Perez.jpg" alt="">
         </div>
 
         <div class="mi">
@@ -951,24 +976,46 @@ body.modal-open{overflow:hidden}
       </div>
 
       <!-- 2 -->
-  
+  <div class="mcard"
+           data-area="FACILIDADES"
+           data-espec="CERTIFICACION"
+           data-cargo="CERTIFICADOR"
+           data-nombre="JIMENEZ GARZON JULIANA"
+           data-cc="1123513367"
+           data-ruta="n/a"
+           data-turno="COMM"
+           data-foto="Fotos/Jimenez Juliana.jpg"
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="Fotos/Jimenez Juliana.jpg" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Jimenez Juliana</div>
+          <div class="mr">CERTIFICACIÓN</div>
+        </div>
+
+      </div>
 
       <!-- 3 -->
       <div class="mcard"
-           data-area="CERTIFICACION"
+           data-area="FACILIDADES"
            data-espec="CERTIFICACION"
            data-cargo="CERTIFICADOR"
            data-nombre="PEDRO ANDRES SANDOVAL ACUÑA"
            data-cc="1049605394"
            data-ruta="Bog - Mor - Bog"
            data-turno="COMM"
-           data-foto=""
+           data-foto="Fotos/Pedro Andres.jpg"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="mph">
-          <img src="" alt="">
+          <img src="Fotos/Pedro Andres.jpg" alt="">
         </div>
 
         <div class="mi">
@@ -980,20 +1027,20 @@ body.modal-open{overflow:hidden}
 
       <!-- 4 -->
       <div class="mcard"
-           data-area="ESTACIONES"
+           data-area="INFILL"
            data-espec="CERTIFICACION"
            data-cargo="CERTIFICADOR"
            data-nombre="IRNEIS JULIO URBINA"
            data-cc="1143331094"
            data-ruta="Bog - Mor - Bog"
            data-turno="COMM"
-           data-foto=""
+           data-foto="Fotos/Irnes Julio.jpg"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="mph">
-          <img src="" alt="">
+          <img src="Fotos/Irnes Julio.jpg" alt="">
         </div>
 
         <div class="mi">
@@ -1003,19 +1050,19 @@ body.modal-open{overflow:hidden}
 
       </div>
   <div class="mcard"
-     data-area="ESTACIONES"
+     data-area="INFILL"
      data-espec="CERTIFICADOR"
      data-cargo="INGENIERO"
      data-nombre="SALUA ISABEL MOLINA CARRILLO"
      data-cc="1047421225"
      data-ruta="Bog - Mor - Bog"
      data-turno="2"
-     data-foto=""
+     data-foto="Fotos/Salua Isabel.jpeg"
      tabindex="0"
      onclick="abrirModal(this)"
      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
-  <div class="ph"><img src="" alt=""></div>
+  <div class="ph"><img src="Fotos/Salua Isabel.jpeg" alt=""></div>
 
   <div class="mi">
     <div class="mn">Salua Isabel Molina Carrillo</div>
@@ -1041,7 +1088,7 @@ body.modal-open{overflow:hidden}
   <div class="tbox-head"
        style="background:linear-gradient(135deg,#f59e0b22,#f59e0b33);border-color:#f59e0b66">
     <div class="tname">EQUIPO DE MATERIALES</div>
-    <div class="tcnt">8</div>
+    <div class="tcnt">5</div>
   </div>
 
   <div class="tbody">
@@ -1049,29 +1096,7 @@ body.modal-open{overflow:hidden}
 
       <!-- Aquí van las 8 tarjetas mcard una debajo de otra -->
 
-      <!-- Sergio -->
-      <div class="mcard"
-           data-area="MATERIALES"
-           data-espec="MATERIALES"
-           data-cargo="MATERIALES"
-           data-nombre="SERGIO LEONIDAS LOPEZ LUENGAS"
-           data-cc=""
-           data-ruta=""
-           data-turno=""
-           data-foto=""
-           tabindex="0"
-           onclick="abrirModal(this)"
-           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
-
-        <div class="mph">
-          <img src="" alt="">
-        </div>
-
-        <div class="mi">
-          <div class="mn">Sergio Leonidas Lopez Luengas</div>
-          <div class="mr">MATERIALES</div>
-        </div>
-      </div>
+  
 
       <!-- Carlos -->
      <div class="mcard"
@@ -1082,13 +1107,13 @@ body.modal-open{overflow:hidden}
            data-cc=""
            data-ruta=""
            data-turno=""
-           data-foto=""
+           data-foto="Fotos/Carlos Ortega.jpg"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="mph">
-          <img src="" alt="">
+          <img src="Fotos/Carlos Ortega.jpg" alt="">
         </div>
 
         <div class="mi">
@@ -1106,13 +1131,13 @@ body.modal-open{overflow:hidden}
            data-cc=""
            data-ruta=""
            data-turno=""
-           data-foto=""
+           data-foto="Fotos/Yorman Yesid.jpg"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="mph">
-          <img src="" alt="">
+          <img src="Fotos/Yorman Yesid.jpg" alt="">
         </div>
 
         <div class="mi">
@@ -1124,148 +1149,73 @@ body.modal-open{overflow:hidden}
       <!-- José -->
       
 		
+	    <div class="mcard"
+           data-area="MATERIALES"
+           data-espec="MATERIALES"
+           data-cargo="MATERIALES"
+           data-nombre="Romero Perez Karem Yulieth"
+           data-cc=""
+           data-ruta=""
+           data-turno="HOME OFFICE"
+           data-foto="Fotos/Romero Perez.jpg"
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="Fotos/Romero Perez.jpg" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Romero Perez Karem Yulieth</div>
+          <div class="mr">MATERIALES</div>
+        </div>
+      </div>
+		
+		
 		  <div class="mcard"
            data-area="MATERIALES"
            data-espec="MATERIALES"
            data-cargo="MATERIALES"
-           data-nombre="SERGIO LEONIDAS LOPEZ LUENGAS"
+           data-nombre="FABIAN NORBERTO MARIN CLAVIJO"
            data-cc=""
            data-ruta=""
-           data-turno=""
-           data-foto=""
+           data-turno="HOME OFFICE"
+           data-foto="Fotos/Fabian Norberto.jpg"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="mph">
-          <img src="" alt="">
+          <img src="Fotos/Fabian Norberto.jpg" alt="">
         </div>
 
         <div class="mi">
-          <div class="mn">José Jair Lozano Piraquive</div>
-          <div class="mr">MATERIALES</div>
-        </div>
-      </div>
-		
-		
-		<div class="mcard">
-        <div class="mph"><img src="" alt=""></div>
-        <div class="mi">
-          <div class="mn"></div>
+          <div class="mn">Fabian Norberto Marin Clavijo</div>
           <div class="mr">MATERIALES</div>
         </div>
       </div>
 
-      <!-- Juan -->
     
-		
-		      <div class="mcard"
+		  <div class="mcard"
            data-area="MATERIALES"
            data-espec="MATERIALES"
            data-cargo="MATERIALES"
-           data-nombre="Juan David Wandurraga Santamaría"
+           data-nombre="SERGIO LEONIDAS LOPEZ LUENGAS "
            data-cc=""
            data-ruta=""
-           data-turno=""
-           data-foto=""
+           data-turno="HOME OFFICE"
+           data-foto="Fotos/Sergio Leonidas.jpg"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="mph">
-          <img src="" alt="">
+          <img src="Fotos/Sergio Leonidas.jpg" alt="">
         </div>
 
         <div class="mi">
-          <div class="mn">Juan David Wandurraga Santamaría</div>
-          <div class="mr">MATERIALES</div>
-        </div>
-      </div>
-		
-		
-		
-		
-		
-
-      <!-- Nelson -->
-
-		
-		
-				      <div class="mcard"
-           data-area="MATERIALES"
-           data-espec="MATERIALES"
-           data-cargo="MATERIALES"
-           data-nombre="Nelson Leonardo Fonseca López"
-           data-cc=""
-           data-ruta=""
-           data-turno=""
-           data-foto=""
-           tabindex="0"
-           onclick="abrirModal(this)"
-           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
-
-        <div class="mph">
-          <img src="" alt="">
-        </div>
-
-        <div class="mi">
-          <div class="mn">Nelson Leonardo Fonseca López</div>
-          <div class="mr">MATERIALES</div>
-        </div>
-      </div>
-		
-		
-
-      <!-- Paola -->
-  
-
-			
-				      <div class="mcard"
-           data-area="MATERIALES"
-           data-espec="MATERIALES"
-           data-cargo="MATERIALES"
-           data-nombre="Paola Alexandra Martínez Garzón"
-           data-cc=""
-           data-ruta=""
-           data-turno=""
-           data-foto=""
-           tabindex="0"
-           onclick="abrirModal(this)"
-           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
-
-        <div class="mph">
-          <img src="" alt="">
-        </div>
-
-        <div class="mi">
-          <div class="mn">Paola Alexandra Martínez Garzón</div>
-          <div class="mr">MATERIALES</div>
-        </div>
-      </div>
-		
-      <!-- Adrián -->
-  
-		
-		
-					      <div class="mcard"
-           data-area="MATERIALES"
-           data-espec="MATERIALES"
-           data-cargo="MATERIALES"
-           data-nombre="Adrián Josué Rojas Ortiz"
-           data-cc=""
-           data-ruta=""
-           data-turno=""
-           data-foto=""
-           tabindex="0"
-           onclick="abrirModal(this)"
-           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
-
-        <div class="mph">
-          <img src="" alt="">
-        </div>
-
-        <div class="mi">
-          <div class="mn">Adrián Josué Rojas Ortiz</div>
+          <div class="mn">Sergio Leonidas Lopez Luengas</div>
           <div class="mr">MATERIALES</div>
         </div>
       </div>
@@ -1288,48 +1238,152 @@ body.modal-open{overflow:hidden}
         <div class="tbody">
             <div class="tlist">
 
-                <div class="mcard">
-                    <div class="mi">
-                        <div class="mn">Diego Polanco Coronado</div>
-                        <div class="mr">Incorporación de Activos</div>
-                    </div>
-                </div>
+              
+				
+	  <div class="mcard"
+           data-area="IDA"
+           data-espec="IDA"
+           data-cargo="IDA"
+           data-nombre="Diego Polanco Coronado"
+           data-cc=""
+           data-ruta=""
+           data-turno=""
+           data-foto="Fotos/Diego Polanco.jpg"
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
-                <div class="mcard">
-                    <div class="mi">
-                        <div class="mn">Guillermo Andrés Colina Ortiz</div>
-                        <div class="mr">Incorporación de Activos</div>
-                    </div>
-                </div>
+        <div class="mph">
+          <img src="Fotos/Diego Polanco.jpg" alt="">
+        </div>
 
-                <div class="mcard">
-                    <div class="mi">
-                        <div class="mn">Lisa Saavedra Moreno</div>
-                        <div class="mr">Incorporación de Activos</div>
-                    </div>
-                </div>
+        <div class="mi">
+          <div class="mn">Diego Polanco</div>
+          <div class="mr">IDA</div>
+        </div>
+      </div>
+				
+							
+	  <div class="mcard"
+           data-area="IDA"
+           data-espec="IDA"
+           data-cargo="IDA"
+           data-nombre="Guillermo Andrés Colina Ortiz"
+           data-cc=""
+           data-ruta=""
+           data-turno=""
+           data-foto="Fotos/Guillermo Colina.png"
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
-                <div class="mcard">
-                    <div class="mi">
-                        <div class="mn">Luis Guillermo Romero</div>
-                        <div class="mr">Incorporación de Activos</div>
-                    </div>
-                </div>
+        <div class="mph">
+          <img src="Fotos/Guillermo Colina.png" alt="">
+        </div>
 
-                <div class="mcard">
-                    <div class="mi">
-                        <div class="mn">Saint Arteaga Hernández</div>
-                        <div class="mr">Incorporación de Activos</div>
-                    </div>
-                </div>
+        <div class="mi">
+          <div class="mn">Guillermo Andrés Colina Ortiz</div>
+          <div class="mr">IDA</div>
+        </div>
+      </div>	
+				
+									
+	  <div class="mcard"
+           data-area="IDA"
+           data-espec="IDA"
+           data-cargo="IDA"
+           data-nombre="Lisa Saavedra Moreno"
+           data-cc=""
+           data-ruta=""
+           data-turno=""
+           data-foto="Fotos/Lisa Saavedra.jpeg"
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
-                <div class="mcard">
-                    <div class="mi">
-                        <div class="mn">Juan Carlos López</div>
-                        <div class="mr">Incorporación de Activos</div>
-                    </div>
-                </div>
+        <div class="mph">
+          <img src="Fotos/Lisa Saavedra.jpeg" alt="">
+        </div>
 
+        <div class="mi">
+          <div class="mn">Lisa Saavedra Moreno</div>
+          <div class="mr">IDA</div>
+        </div>
+      </div>
+				
+				
+			  <div class="mcard"
+           data-area="IDA"
+           data-espec="IDA"
+           data-cargo="IDA"
+           data-nombre="Luis Guillermo Romero"
+           data-cc=""
+           data-ruta=""
+           data-turno=""
+           data-foto="Fotos/Luis Guilleremo.jpeg"
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="Fotos/Luis Guilleremo.jpeg" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Luis Guillermo Romero</div>
+          <div class="mr">IDA</div>
+        </div>
+      </div>				
+				
+					  <div class="mcard"
+           data-area="IDA"
+           data-espec="IDA"
+           data-cargo="IDA"
+           data-nombre="Saint Arteaga Hernández"
+           data-cc=""
+           data-ruta=""
+           data-turno=""
+           data-foto="Fotos/Saint Arteaga.jpg"
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="Fotos/Saint Arteaga.jpg" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Saint Arteaga Hernández</div>
+          <div class="mr">IDA</div>
+        </div>
+      </div>				
+					
+
+					  <div class="mcard"
+           data-area="IDA"
+           data-espec="IDA"
+           data-cargo="IDA"
+           data-nombre="Juan Carlos López"
+           data-cc=""
+           data-ruta=""
+           data-turno=""
+           data-foto="Fotos/Juan Carlos Lopez.jpeg"
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="Fotos/Juan Carlos Lopez.jpeg" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Juan Carlos López</div>
+          <div class="mr">IDA</div>
+        </div>
+      </div>					
+				
+             
+                        
             </div>
         </div>
     </div>
@@ -1339,7 +1393,7 @@ body.modal-open{overflow:hidden}
   <div class="tbox-head"
        style="background:linear-gradient(135deg,#27d29c22,#27d29c33);border-color:#27d29c66">
     <div class="tname">EQUIPO LOGÍSTICA</div>
-    <div class="tcnt">1</div>
+    <div class="tcnt">2</div>
   </div>
 
   <div class="tbody">
@@ -1353,17 +1407,41 @@ body.modal-open{overflow:hidden}
            data-cc=""
            data-ruta=""
            data-turno="COMM"
-           data-foto=""
+           data-foto="Fotos/Darwin Alexander.jpeg"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="mph">
-          <img src="" alt="">
+          <img src="Fotos/Darwin Alexander.jpeg" alt="">
         </div>
 
         <div class="mi">
           <div class="mn">Darwin Alexander Rivas Cuesta</div>
+          <div class="mr">LOGÍSTICA</div>
+        </div>
+
+      </div>
+		
+		 <div class="mcard"
+           data-area="LOGISTICA"
+           data-espec="LOGISTICA"
+           data-cargo="LOGISTICA"
+           data-nombre="NELLY LICET VARELA ESCOBAR"
+           data-cc="1105361243"
+           data-ruta=""
+           data-turno="COMM"
+           data-foto="Fotos/Nelly.jpeg"
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="Fotos/Nelly.jpeg" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">NELLY LICET VARELA ESCOBAR</div>
           <div class="mr">LOGÍSTICA</div>
         </div>
 
@@ -1386,22 +1464,23 @@ body.modal-open{overflow:hidden}
   <div class="tbody">
     <div class="tlist">
 
-      <!-- 1 -->
+  
+    <!-- 1 -->
       <div class="mcard"
            data-area="HSE"
            data-espec="HSE"
            data-cargo="HSE"
-           data-nombre="MARIA DEL PILAR GARCIA RODRIGUEZ"
+           data-nombre="SILVIA ZUTA"
            data-cc=""
            data-ruta=""
            data-turno="COMM"
-           data-foto=""
+           data-foto="Fotos/Silvia Zuta.jpeg"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="mph">
-          <img src="" alt="">
+          <img src="Fotos/Silvia Zuta.jpeg" alt="">
         </div>
 
         <div class="mi">
@@ -1410,25 +1489,27 @@ body.modal-open{overflow:hidden}
         </div>
 
       </div>
-
-      <!-- 2 VACANTE -->
+		
+		    <!-- 2 -->
       <div class="mcard"
            data-area="HSE"
            data-espec="HSE"
-           data-cargo="VACANTE"
-           data-nombre="VACANTE"
+           data-cargo="HSE"
+           data-nombre="CESAR ERLEY GARCIA ROZO"
            data-cc=""
            data-ruta=""
-           data-turno=""
-           data-foto=""
-           tabindex="0">
+           data-turno="COMM"
+           data-foto="Fotos/"
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="mph">
-          <img src="" alt="">
+          <img src="Fotos/" alt="">
         </div>
 
         <div class="mi">
-          <div class="mn">Vacante</div>
+          <div class="mn">CESAR ERLEY GARCIA ROZO</div>
           <div class="mr">HSE</div>
         </div>
 
@@ -1444,7 +1525,7 @@ body.modal-open{overflow:hidden}
 <!-- CIVIL | ELÉCTRICO | INSTRUMENTACIÓN | MECÁNICA ESTÁTICA -->
 <!-- ========================================================= -->
 
-<div class="trow" data-row="4" style="grid-template-columns:repeat(4,minmax(0,1fr))">
+<div class="trow" data-row="5" style="grid-template-columns:repeat(5,minmax(0,1fr))">
 
   <!-- ================== EQUIPO CIVIL ================== -->
 
@@ -1453,14 +1534,14 @@ body.modal-open{overflow:hidden}
     <div class="tbox-head"
          style="background:linear-gradient(135deg,#22c55e22,#22c55e33);border-color:#22c55e66">
       <div class="tname">EQUIPO CIVIL</div>
-      <div class="tcnt">3</div>
+      <div class="tcnt">2</div>
     </div>
 
     <div class="tbody">
       <div class="tlist">
 
         <div class="mcard"
-             data-area="EXTERIORES"
+             data-area="FACILIDADES"
              data-espec="CIVIL"
              data-cargo="INGENIERO"
              data-nombre="MILLER AUDENIZ MALDONADO SALCEDO"
@@ -1473,7 +1554,7 @@ body.modal-open{overflow:hidden}
              onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
           <div class="ph">
-            <img src="" alt="">
+            <img src="Fotos/Miller Maldonado.jpg" alt="">
           </div>
 
           <div class="mi">
@@ -1484,20 +1565,20 @@ body.modal-open{overflow:hidden}
         </div>
 
         <div class="mcard"
-             data-area="ESTACIONES"
+             data-area="INFILL"
              data-espec="CIVIL"
              data-cargo="INGENIERO"
              data-nombre="FABIO ANTONIO GUTIERREZ COLMENARES"
              data-cc="13861537"
              data-ruta="Bog - Mor - Bog"
              data-turno="2"
-             data-foto=""
+             data-foto="Fotos/Fabio Gutierres.jpg"
              tabindex="0"
              onclick="abrirModal(this)"
              onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
           <div class="ph">
-            <img src="" alt="">
+            <img src="Fotos/Fabio Gutierres.jpg" alt="">
           </div>
 
           <div class="mi">
@@ -1507,29 +1588,7 @@ body.modal-open{overflow:hidden}
 
         </div>
 
-        <div class="mcard"
-             data-area="TRANSVERSAL"
-             data-espec="CIVIL"
-             data-cargo="INGENIERO"
-             data-nombre="WILLIAM ALEJANDRO RAMIREZ LADINO"
-             data-cc="79977123"
-             data-ruta="Bog - Mor - Bog"
-             data-turno="1"
-             data-foto=""
-             tabindex="0"
-             onclick="abrirModal(this)"
-             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
-
-          <div class="ph">
-            <img src="" alt="">
-          </div>
-
-          <div class="mi">
-            <div class="mn">William Alejandro Ramírez Ladino</div>
-            <div class="mr">CIVIL</div>
-          </div>
-
-        </div>
+     
 
       </div>
     </div>
@@ -1543,7 +1602,7 @@ body.modal-open{overflow:hidden}
     <div class="tbox-head"
          style="background:linear-gradient(135deg,#22c55e22,#22c55e33);border-color:#22c55e66">
       <div class="tname">EQUIPO ELECTRICO</div>
-      <div class="tcnt">14</div>
+      <div class="tcnt">10</div>
     </div>
 
     <div class="tbody">
@@ -1551,43 +1610,23 @@ body.modal-open{overflow:hidden}
 		  
 		  
 		  
-		  <!-- 1 -->
-<div class="mcard"
-     data-area="EXTERIORES"
-     data-espec="ELECTRICO"
-     data-cargo="INGENIERO"
-     data-nombre="RAFAEL ASDRUVAL DEVIA GUARIN"
-     data-cc="13852690"
-     data-ruta="Bog - Mor - Bog"
-     data-turno="2"
-     data-foto=""
-     tabindex="0"
-     onclick="abrirModal(this)"
-     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
-  <div class="ph"><img src="" alt=""></div>
-
-  <div class="mi">
-    <div class="mn">Rafael Asdruval Devia Guarin</div>
-    <div class="mr">ELECTRICO</div>
-  </div>
-</div>
 
 <!-- 2 -->
 <div class="mcard"
-     data-area="ESTACIONES"
+     data-area="INFILL"
      data-espec="ELECTRICO"
      data-cargo="INGENIERO"
      data-nombre="LUIS ALBERTO GAONA RAMIREZ"
      data-cc="91282218"
      data-ruta="Bog - Mor - Bog"
      data-turno="2"
-     data-foto=""
+     data-foto="Fotos/Luis Alberto G.jpg"
      tabindex="0"
      onclick="abrirModal(this)"
      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
-  <div class="ph"><img src="" alt=""></div>
+  <div class="ph"><img src="Fotos/Luis Alberto G.jpg" alt=""></div>
 
   <div class="mi">
     <div class="mn">Luis Alberto Gaona Ramirez</div>
@@ -1597,19 +1636,19 @@ body.modal-open{overflow:hidden}
 
 <!-- 3 -->
 <div class="mcard"
-     data-area="EXTERIORES"
+     data-area="FACILIDADES"
      data-espec="ELECTRICO"
      data-cargo="INGENIERO"
      data-nombre="IVAN DARIO CORREDOR GARCIA"
      data-cc="1098702255"
      data-ruta="Bog - Mor - Bog"
      data-turno="2"
-     data-foto=""
+     data-foto="Fotos/Ivan Dario C.jpg"
      tabindex="0"
      onclick="abrirModal(this)"
      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
-  <div class="ph"><img src="" alt=""></div>
+  <div class="ph"><img src="Fotos/Ivan Dario C.jpg" alt=""></div>
 
   <div class="mi">
     <div class="mn">Ivan Dario Corredor Garcia</div>
@@ -1619,19 +1658,19 @@ body.modal-open{overflow:hidden}
 
 <!-- 4 -->
 <div class="mcard"
-     data-area="EXTERIORES"
+     data-area="FACILIDADES"
      data-espec="ELECTRICO"
      data-cargo="INGENIERO"
      data-nombre="HERNAN TARRIBA SOLANO"
      data-cc="3806234"
      data-ruta="Bog - Mor - Bog"
      data-turno="2"
-     data-foto=""
+     data-foto="Fotos/Hernan Tarriba.jpeg"
      tabindex="0"
      onclick="abrirModal(this)"
      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
-  <div class="ph"><img src="" alt=""></div>
+  <div class="ph"><img src="Fotos/Hernan Tarriba.jpeg" alt=""></div>
 
   <div class="mi">
     <div class="mn">Hernan Tarriba Solano</div>
@@ -1641,23 +1680,23 @@ body.modal-open{overflow:hidden}
 
 <!-- 5 -->
 <div class="mcard"
-     data-area="EXTERIORES"
+     data-area="FACILIDADES"
      data-espec="ELECTRICO"
      data-cargo="INGENIERO"
      data-nombre="OMAR FERNANDO OSORIO NIÑO"
      data-cc="91522825"
      data-ruta="Bog - Mor - Bog"
      data-turno="2"
-     data-foto=""
+     data-foto="Fotos/Omar Osorio.jpg"
      tabindex="0"
      onclick="abrirModal(this)"
      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
-  <div class="ph"><img src="" alt=""></div>
+  <div class="ph"><img src="Fotos/Omar Osorio.jpg" alt=""></div>
 
   <div class="mi">
     <div class="mn">Omar Fernando Osorio Niño</div>
-    <div class="mr">ELECTRICO</div>
+    <div class="mr">SYNCRONISMO- ELECTRICO</div>
   </div>
 </div>
 
@@ -1666,42 +1705,42 @@ body.modal-open{overflow:hidden}
 
 <!-- 7 -->
 <div class="mcard"
-     data-area="EXTERIORES"
+     data-area="FACILIDADES"
      data-espec="ELECTRICO"
      data-cargo="INGENIERO"
      data-nombre="JAIRO HUMBERTO FORERO ALVARES"
      data-cc="79652961"
      data-ruta="Bog - Mor - Bog"
      data-turno="2"
-     data-foto=""
+     data-foto="Fotos/Jairo Forero.jpg"
      tabindex="0"
      onclick="abrirModal(this)"
      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
-  <div class="ph"><img src="" alt=""></div>
+  <div class="ph"><img src="Fotos/Jairo Forero.jpg" alt=""></div>
 
   <div class="mi">
     <div class="mn">Jairo Humberto Forero Alvares</div>
-    <div class="mr">ELECTRICO</div>
+    <div class="mr">SYNCRONISMO-ELECTRICO</div>
   </div>
 </div>
 		  
 		  
 		  <!-- 8 -->
 <div class="mcard"
-     data-area="ESTACIONES"
+     data-area="INFILL"
      data-espec="ELECTRICO"
      data-cargo="INGENIERO"
      data-nombre="GERSON FABIAN OVIEDO GALVIS"
      data-cc="1098602851"
      data-ruta="Bog - Mor - Bog"
      data-turno="2"
-     data-foto=""
+     data-foto="Fotos/Gerson Oviedo.jpg"
      tabindex="0"
      onclick="abrirModal(this)"
      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
-  <div class="ph"><img src="" alt=""></div>
+  <div class="ph"><img src="Fotos/Gerson Oviedo.jpg" alt=""></div>
 
   <div class="mi">
     <div class="mn">Gerson Fabian Oviedo Galvis</div>
@@ -1711,19 +1750,19 @@ body.modal-open{overflow:hidden}
 
 <!-- 9 -->
 <div class="mcard"
-     data-area="EXTERIORES"
+     data-area="FACILIDADES"
      data-espec="ELECTRICO"
      data-cargo="INGENIERO"
      data-nombre="CESAR URIEL VILLAMIZAR GELVEZ"
      data-cc="74377113"
      data-ruta="Bog - Mor - Bog"
      data-turno="2"
-     data-foto=""
+     data-foto="Fotos/Cesar Uriel.jpg"
      tabindex="0"
      onclick="abrirModal(this)"
      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
-  <div class="ph"><img src="" alt=""></div>
+  <div class="ph"><img src="Fotos/Cesar Uriel.jpg" alt=""></div>
 
   <div class="mi">
     <div class="mn">Cesar Uriel Villamizar Gelvez</div>
@@ -1732,64 +1771,25 @@ body.modal-open{overflow:hidden}
 </div>
 
 <!-- 10 -->
-<div class="mcard"
-     data-area="EXTERIORES"
-     data-espec="ELECTRICO"
-     data-cargo="INGENIERO"
-     data-nombre="CAMILO ANDRES CHAVES BOGOTA"
-     data-cc="1121914682"
-     data-ruta="Bog - Mor - Bog"
-     data-turno="2"
-     data-foto=""
-     tabindex="0"
-     onclick="abrirModal(this)"
-     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
-  <div class="ph"><img src="" alt=""></div>
-
-  <div class="mi">
-    <div class="mn">Camilo Andres Chaves Bogota</div>
-    <div class="mr">ELECTRICO</div>
-  </div>
-</div>
 
 <!-- 11 -->
-<div class="mcard"
-     data-area="EXTERIORES"
-     data-espec="ELECTRICO"
-     data-cargo="INGENIERO"
-     data-nombre="CARLOS HUMBERTO MERCADO"
-     data-cc="91425416"
-     data-ruta="Bog - Mor - Bog"
-     data-turno="2"
-     data-foto=""
-     tabindex="0"
-     onclick="abrirModal(this)"
-     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
-
-  <div class="ph"><img src="" alt=""></div>
-
-  <div class="mi">
-    <div class="mn">Carlos Humberto Mercado</div>
-    <div class="mr">ELECTRICO</div>
-  </div>
-</div>
 
 <!-- 12 -->
 <div class="mcard"
-     data-area="ESTACIONES"
+     data-area="INFILL"
      data-espec="ELECTRICO"
      data-cargo="INGENIERO"
      data-nombre="JULIO CESAR PERALTA SUAREZ"
      data-cc="88159600"
      data-ruta="Bog - Mor - Bog"
      data-turno="2"
-     data-foto=""
+     data-foto="Fotos/Julio Cesar Peralta.jpg"
      tabindex="0"
      onclick="abrirModal(this)"
      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
-  <div class="ph"><img src="" alt=""></div>
+  <div class="ph"><img src="Fotos/Julio Cesar Peralta.jpg" alt=""></div>
 
   <div class="mi">
     <div class="mn">Julio Cesar Peralta Suarez</div>
@@ -1799,19 +1799,19 @@ body.modal-open{overflow:hidden}
 
 <!-- 13 -->
 <div class="mcard"
-     data-area="EXTERIORES"
+     data-area="FACILIDADES"
      data-espec="ELECTRICO"
      data-cargo="INGENIERO"
      data-nombre="CÁNDIDO RAMÍREZ JIMÉNEZ"
      data-cc="91248962"
      data-ruta="Bog - Mor - Bog"
      data-turno="2"
-     data-foto=""
+     data-foto="Fotos/Candido Ramirez.jpg"
      tabindex="0"
      onclick="abrirModal(this)"
      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
-  <div class="ph"><img src="" alt=""></div>
+  <div class="ph"><img src="Fotos/Candido Ramirez.jpg" alt=""></div>
 
   <div class="mi">
     <div class="mn">Cándido Ramírez Jiménez</div>
@@ -1821,19 +1821,19 @@ body.modal-open{overflow:hidden}
 
 <!-- 14 -->
 <div class="mcard"
-     data-area="EXTERIORES"
+     data-area="FACILIDADES"
      data-espec="ELECTRICO"
      data-cargo="INGENIERO"
      data-nombre="JULIO CESAR PATIÑO LAROTTA"
      data-cc="7180539"
      data-ruta="Bog - Mor - Bog"
      data-turno="2"
-     data-foto=""
+     data-foto="Fotos/Julio Patiño.jpg"
      tabindex="0"
      onclick="abrirModal(this)"
      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
-  <div class="ph"><img src="" alt=""></div>
+  <div class="ph"><img src="Fotos/Julio Patiño.jpg" alt=""></div>
 
   <div class="mi">
     <div class="mn">Julio Cesar Patiño Larotta</div>
@@ -1853,7 +1853,7 @@ body.modal-open{overflow:hidden}
     <div class="tbox-head"
          style="background:linear-gradient(135deg,#a78bfa22,#a78bfa33);border-color:#a78bfa66">
       <div class="tname">EQUIPO INSTRUMENTACIÓN Y CONTROL</div>
-      <div class="tcnt">12</div>
+      <div class="tcnt">10</div>
     </div>
 
     <div class="tbody">
@@ -1862,44 +1862,44 @@ body.modal-open{overflow:hidden}
 		  
 		  <!-- 1 -->
 <div class="mcard"
-     data-area="EXTERIORES"
+     data-area="FACILIDADES"
      data-espec="CONTROL"
      data-cargo="INGENIERO"
      data-nombre="MARLON ALFONSO REYES FIGUEROA"
      data-cc="13716185"
      data-ruta="Bog - Mor - Bog"
      data-turno="1"
-     data-foto=""
+     data-foto="Fotos/Marlon Reyes.jpg"
      tabindex="0"
      onclick="abrirModal(this)"
      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
   <div class="ph">
-    <img src="" alt="">
+    <img src="Fotos/Marlon Reyes.jpg" alt="">
   </div>
 
   <div class="mi">
     <div class="mn">Marlon Alfonso Reyes Figueroa</div>
-    <div class="mr">INSTRUMENTACIÓN Y CONTROL</div>
+    <div class="mr">SYNCRONISMO-INSTRUMENTACIÓN Y CONTROL</div>
   </div>
 </div>
 
 <!-- 2 -->
 <div class="mcard"
-     data-area="ESTACIONES"
+     data-area="INFILL"
      data-espec="INSTRUMENTACION Y CONTROL"
      data-cargo="INGENIERO"
      data-nombre="JAVIER RINCON GUAUQUE"
      data-cc="74184604"
      data-ruta="Bog - Mor - Bog"
      data-turno="1"
-     data-foto=""
+     data-foto="Fotos/Javier Rincon.jpg"
      tabindex="0"
      onclick="abrirModal(this)"
      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
   <div class="ph">
-    <img src="" alt="">
+    <img src="Fotos/Javier Rincon.jpg" alt="">
   </div>
 
   <div class="mi">
@@ -1910,20 +1910,20 @@ body.modal-open{overflow:hidden}
 
 <!-- 3 -->
 <div class="mcard"
-     data-area="EXTERIORES"
+     data-area="FACILIDADES"
      data-espec="INSTRUMENTACION Y CONTROL"
      data-cargo="INGENIERO"
      data-nombre="ALEXANDER MANTILLA GUTIERREZ"
      data-cc="13744438"
      data-ruta="Bog - Mor - Bog"
      data-turno="1"
-     data-foto=""
+     data-foto="Fotos/Alexander Mantilla.jpg"
      tabindex="0"
      onclick="abrirModal(this)"
      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
   <div class="ph">
-    <img src="" alt="">
+    <img src="Fotos/Alexander Mantilla.jpg" alt="">
   </div>
 
   <div class="mi">
@@ -1933,117 +1933,74 @@ body.modal-open{overflow:hidden}
 </div>
 
 <!-- 4 -->
-<div class="mcard"
-     data-area="EXTERIORES"
-     data-espec="INSTRUMENTACION Y CONTROL"
-     data-cargo="INGENIERO"
-     data-nombre="JUAN CAMILO MUÑOZ"
-     data-cc="1061714095"
-     data-ruta="PG - Mor - Vll"
-     data-turno="2"
-     data-foto="data:image/svg+xml;utf8,..."
-     tabindex="0"
-     onclick="abrirModal(this)"
-     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
-
-  <div class="ph">
-    <img src="" alt="">
-  </div>
-
-  <div class="mi">
-    <div class="mn">Juan Camilo Muñoz</div>
-    <div class="mr">INSTRUMENTACIÓN Y CONTROL</div>
-  </div>
-</div>
 
 <!-- 5 -->
-<div class="mcard"
-     data-area="EXTERIORES"
-     data-espec="CONTROL"
-     data-cargo="INGENIERO"
-     data-nombre="JORGE ARMANDO OSORIO ALMANZA"
-     data-cc="84090922"
-     data-ruta="Bog - Mor - Bog"
-     data-turno="2"
-     data-foto=""
-     tabindex="0"
-     onclick="abrirModal(this)"
-     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
-  <div class="ph">
-    <img src="" alt="">
-  </div>
-
-  <div class="mi">
-    <div class="mn">Jorge Armando Osorio Almanza</div>
-    <div class="mr">CONTROL</div>
-  </div>
-</div>
 
 <!-- 6 -->
 <div class="mcard"
-     data-area="ESTACIONES"
+     data-area="INFILL"
      data-espec="INSTRUMENTACION Y CONTROL"
      data-cargo="INGENIERO"
      data-nombre="DANIEL HENRIQUE JINETE CARRILLO"
      data-cc="8769136"
      data-ruta="Bog - Mor - Vll"
      data-turno="2"
-     data-foto=""
+     data-foto="Fotos/Daniel Jinete.jpg"
      tabindex="0"
      onclick="abrirModal(this)"
      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
   <div class="ph">
-    <img src="" alt="">
+    <img src="Fotos/Daniel Jinete.jpg" alt="">
   </div>
 
   <div class="mi">
     <div class="mn">Daniel Henrique Jinete Carrillo</div>
-    <div class="mr">INSTRUMENTACIÓN Y CONTROL</div>
+    <div class="mr">SYNCRONISMO-INSTRUMENTACIÓN Y CONTROL</div>
   </div>
 </div>
 		  
 <!-- 7 -->
 <div class="mcard"
-     data-area="EXTERIORES"
+     data-area="FACILIDADES"
      data-espec="INSTRUMENTACION Y CONTROL"
      data-cargo="INGENIERO"
      data-nombre="RONNY ALEXANDER TORO PEREIRA"
      data-cc="94540131"
      data-ruta="Bog - Mor - Bog"
      data-turno="2"
-     data-foto=""
+     data-foto="Fotos/Ronny A.jpg"
      tabindex="0"
      onclick="abrirModal(this)"
      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
   <div class="ph">
-    <img src="" alt="">
+    <img src="Fotos/Ronny A.jpg" alt="">
   </div>
 
   <div class="mi">
     <div class="mn">Ronny Alexander Toro Pereira</div>
-    <div class="mr">INSTRUMENTACIÓN Y CONTROL</div>
+    <div class="mr">SYNCRONISMO-INSTRUMENTACIÓN Y CONTROL</div>
   </div>
 </div>
 
 <!-- 8 -->
 <div class="mcard"
-     data-area="ESTACIONES"
+     data-area="INFILL"
      data-espec="CONTROL"
      data-cargo="INGENIERO"
      data-nombre="CARLOS ANDRES TURIZO VILLA"
      data-cc="14399292"
      data-ruta="Bog - Mor - Bog"
      data-turno="1"
-     data-foto=""
+     data-foto="Fotos/Carlos Andres T.jpg"
      tabindex="0"
      onclick="abrirModal(this)"
      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
   <div class="ph">
-    <img src="" alt="">
+    <img src="Fotos/Carlos Andres T.jpg" alt="">
   </div>
 
   <div class="mi">
@@ -2054,20 +2011,20 @@ body.modal-open{overflow:hidden}
 
 <!-- 9 -->
 <div class="mcard"
-     data-area="EXTERIORES"
+     data-area="FACILIDADES"
      data-espec="INSTRUMENTACION Y CONTROL"
      data-cargo="INGENIERO"
      data-nombre="RICARDO PERDOMO"
      data-cc="16937741"
      data-ruta="Bog - Mor - Bog"
      data-turno="3"
-     data-foto=""
+     data-foto="Fotos/Ricardo Perdomo.jpg"
      tabindex="0"
      onclick="abrirModal(this)"
      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
   <div class="ph">
-    <img src="" alt="">
+    <img src="Fotos/Ricardo Perdomo.jpg" alt="">
   </div>
 
   <div class="mi">
@@ -2078,44 +2035,44 @@ body.modal-open{overflow:hidden}
 
 <!-- 10 -->
 <div class="mcard"
-     data-area="EXTERIORES"
+     data-area="FACILIDADES"
      data-espec="INSTRUMENTACION Y CONTROL"
      data-cargo="INGENIERO"
      data-nombre="JAVIER HERNANDO GUERRERO PICO"
      data-cc="13745054"
      data-ruta="Bog - Mor - Bog"
      data-turno="3"
-     data-foto=""
+     data-foto="Fotos/Javier Pico.jpg"
      tabindex="0"
      onclick="abrirModal(this)"
      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
   <div class="ph">
-    <img src="" alt="">
+    <img src="Fotos/Javier Pico.jpg" alt="">
   </div>
 
   <div class="mi">
     <div class="mn">Javier Hernando Guerrero Pico</div>
-    <div class="mr">INSTRUMENTACIÓN Y CONTROL</div>
+    <div class="mr">SYNCRONISMO-INSTRUMENTACIÓN Y CONTROL</div>
   </div>
 </div>
 
 <!-- 11 -->
 <div class="mcard"
-     data-area="EXTERIORES"
+     data-area="FACILIDADES"
      data-espec="INSTRUMENTACION Y CONTROL"
      data-cargo="INGENIERO"
      data-nombre="JONNATHAN IGNACIO POLO TRUJILLO"
      data-cc="7726625"
      data-ruta="Bog - Mor - Bog"
      data-turno="3"
-     data-foto=""
+     data-foto="Fotos/Jhonatan Polo.png"
      tabindex="0"
      onclick="abrirModal(this)"
      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
   <div class="ph">
-    <img src="" alt="">
+    <img src="Fotos/Jhonatan Polo.png" alt="">
   </div>
 
   <div class="mi">
@@ -2126,20 +2083,20 @@ body.modal-open{overflow:hidden}
 
 <!-- 12 -->
 <div class="mcard"
-     data-area="ESTACIONES"
+     data-area="INFILL"
      data-espec="INSTRUMENTACION Y CONTROL"
      data-cargo="INGENIERO"
      data-nombre="LEONARDO ANDRES JAIMES FAJARDO"
      data-cc="91538504"
      data-ruta="Bog - Mor - Bog"
      data-turno="3"
-     data-foto=""
+     data-foto="Fotos/Leonardo Jaimes.jpg"
      tabindex="0"
      onclick="abrirModal(this)"
      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
   <div class="ph">
-    <img src="" alt="">
+    <img src="Fotos/Leonardo Jaimes.jpg" alt="">
   </div>
 
   <div class="mi">
@@ -2175,19 +2132,20 @@ body.modal-open{overflow:hidden}
            data-cc="1098741997"
            data-ruta="Bog - Mor - Bog"
            data-turno="1"
-           data-foto=""
+           data-foto="Fotos/Ingrid Katherine.jpg"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="ph">
-          <img src="" alt="">
+          <img src="Fotos/Ingrid Katherine.jpg" alt="">
         </div>
 
         <div class="mi">
           <div class="mn">Ingrid Katherine Rodriguez Chavez</div>
           <div class="mr">MECÁNICA ESTÁTICA</div>
         </div>
+
       </div>
 
       <!-- 2 -->
@@ -2199,50 +2157,129 @@ body.modal-open{overflow:hidden}
            data-cc="7226181"
            data-ruta="Bog - Mor - Bog"
            data-turno="1"
-           data-foto=""
+           data-foto="Fotos/Jose Duarte.jpg"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="ph">
-          <img src="" alt="">
+          <img src="Fotos/Jose Duarte.jpg" alt="">
         </div>
 
         <div class="mi">
           <div class="mn">Jose Alberto Duarte Sepúlveda</div>
           <div class="mr">MECÁNICA ESTÁTICA</div>
         </div>
+
       </div>
 
       <!-- 3 -->
       <div class="mcard"
-           data-area="ESTACIONES"
+           data-area="INFILL"
            data-espec="MECANICA ESTATICA"
            data-cargo="INGENIERO"
            data-nombre="NESTOR RUBEN CUESTAS GONZALEZ"
            data-cc="11448152"
            data-ruta="Bog - Mor - Bog"
            data-turno="1"
-           data-foto=""
+           data-foto="Fotos/Nestor Cuestas.jpeg"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="ph">
-          <img src="" alt="">
+          <img src="Fotos/Nestor Cuestas.jpeg" alt="">
         </div>
 
         <div class="mi">
           <div class="mn">Nestor Ruben Cuestas Gonzalez</div>
           <div class="mr">MECÁNICA ESTÁTICA</div>
         </div>
+
       </div>
 
     </div>
   </div>
 
 </div>
+
 <!-- FIN EQUIPO MECÁNICA ESTÁTICA -->
+
+
+<!-- ================== EQUIPO MECÁNICA ROTATIVA ================== -->
+
+<div class="tbox" style="--c:#ef4444">
+
+  <div class="tbox-head"
+       style="background:linear-gradient(135deg,#ef444422,#ef444433);border-color:#ef444466">
+    <div class="tname">EQUIPO MECÁNICA ROTATIVA</div>
+    <div class="tcnt">2</div>
+  </div>
+
+  <div class="tbody">
+    <div class="tlist">
+
+      <!-- 1 -->
+      <div class="mcard"
+           data-area="FACILIDADES"
+           data-espec="MECANICA ROTATIVA"
+           data-cargo="INGENIERO"
+           data-nombre="LUIS HERNAN PUERTO"
+           data-cc=""
+           data-ruta=""
+           data-turno="1"
+           data-foto="Fotos/Luis Puerto.jpg"
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="ph">
+          <img src="Fotos/Luis Puerto.jpg" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">LUIS HERNAN PUERTO 1</div>
+          <div class="mr">MECÁNICA ROTATIVA</div>
+        </div>
+
+      </div>
+
+      <!-- 2 -->
+      <div class="mcard"
+           data-area="FACILIDADES"
+           data-espec="MECANICA ROTATIVA"
+           data-cargo="INGENIERO"
+           data-nombre="EDINSON PUERTO"
+           data-cc=""
+           data-ruta=""
+           data-turno="1"
+           data-foto="FOTOS/Edinson Puerto.jpeg"
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="ph">
+          <img src="FOTOS/Edinson Puerto.jpeg" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Edinson Puerto</div>
+          <div class="mr">MECÁNICA ROTATIVA</div>
+        </div>
+
+      </div>
+
+      <!-- 3 -->
+   
+
+    </div>
+  </div>
+
+</div>
+
+<!-- FIN EQUIPO MECÁNICA ROTATIVA -->
+	
+	
 		  
 	
 	<!-- ================== TÉCNICOS ELÉCTRICOS ================== -->
@@ -2259,20 +2296,21 @@ body.modal-open{overflow:hidden}
 
       <!-- 1 -->
       <div class="mcard"
-           data-area="FAC"
-           data-espec="TECNICO ELECTRICISTA"
+           data-area="FACILIDADES"
+		   data-espec="TECNICO ELECTRICISTA"
+		   data-extra-areas="TECNICOS"
            data-cargo="TECNICO"
            data-nombre="MAURICIO ANDRES VARGAS MORA"
            data-cc="1098681450"
            data-ruta="Bog - Mor - Vco"
            data-turno="COMM"
-           data-foto=""
+           data-foto="Fotos/Mauricio Vargas.jpeg"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="mph">
-          <img src="" alt="">
+          <img src="Fotos/Mauricio Vargas.jpeg" alt="">
         </div>
 
         <div class="mi">
@@ -2283,20 +2321,21 @@ body.modal-open{overflow:hidden}
 
       <!-- 2 -->
       <div class="mcard"
-           data-area="ESTACIONES"
+           data-area="INFILL"
            data-espec="TECNICO ELECTRICISTA"
+		   data-extra-areas="TECNICOS"
            data-cargo="TECNICO"
            data-nombre="ANIBAL STIVEN GUTIERREZ GARZON"
            data-cc="1121882130"
            data-ruta="Bog - Mor - Vco"
            data-turno="COMM"
-           data-foto=""
+           data-foto="Fotos/Anibal Gutierres.jpeg"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="mph">
-          <img src="" alt="">
+          <img src="Fotos/Anibal Gutierres.jpeg" alt="">
         </div>
 
         <div class="mi">
@@ -2307,20 +2346,21 @@ body.modal-open{overflow:hidden}
 
       <!-- 3 -->
       <div class="mcard"
-           data-area="FAC"
+           data-area="FACILIDADES"
+		   data-extra-areas="TECNICOS"
            data-espec="TECNICO ELECTRICISTA"
            data-cargo="TECNICO"
            data-nombre="WILLIAM QUINTANA SEGURA"
            data-cc="79455968"
            data-ruta="Bog - Mor - Bog"
            data-turno="COMM"
-           data-foto=""
+           data-foto="Fotos/William Quintana.jpg"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="mph">
-          <img src="" alt="">
+          <img src="Fotos/William Quintana.jpg" alt="">
         </div>
 
         <div class="mi">
@@ -2349,20 +2389,21 @@ body.modal-open{overflow:hidden}
 
       <!-- 1 -->
       <div class="mcard"
-           data-area="EXTERIORES"
+           data-area="FACILIDADES"
+		   data-extra-areas="TECNICOS"
            data-espec="INSTRUMENTACION Y CONTROL"
            data-cargo="TECNICO"
            data-nombre="JESUS ALBERTO RIVERA DIAZ"
            data-cc="1083900148"
            data-ruta="Bog - Mor - Bog"
            data-turno="COMM"
-           data-foto=""
+           data-foto="Fotos/Jesus Rivera.jpg"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="mph">
-          <img src="" alt="">
+          <img src="Fotos/Jesus Rivera.jpg" alt="">
         </div>
 
         <div class="mi">
@@ -2373,20 +2414,21 @@ body.modal-open{overflow:hidden}
 
       <!-- 2 -->
       <div class="mcard"
-           data-area="EXTERIORES"
+           data-area="FACILIDADES"
+		   data-extra-areas="TECNICOS"
            data-espec="INSTRUMENTACION Y CONTROL"
            data-cargo="TECNICO"
            data-nombre="LEYDY ESPERANZA PERDOMO MENDEZ"
            data-cc="1075219148"
            data-ruta="Bog - Mor - Bog"
            data-turno="COMM"
-           data-foto=""
+           data-foto="Fotos/Leydi Perdomo.jpeg"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="mph">
-          <img src="" alt="">
+          <img src="Fotos/Leydi Perdomo.jpeg" alt="">
         </div>
 
         <div class="mi">
@@ -2397,20 +2439,21 @@ body.modal-open{overflow:hidden}
 
       <!-- 3 -->
       <div class="mcard"
-           data-area="EXTERIORES"
+           data-area="FACILIDADES"
+		   data-extra-areas="TECNICOS"
            data-espec="INSTRUMENTACION Y CONTROL"
            data-cargo="TECNICO"
            data-nombre="FREDY GIOVANNI LOPEZ CLAVIJO"
            data-cc="16114413"
            data-ruta="Bog - Mor - Bog"
            data-turno="COMM"
-           data-foto=""
+           data-foto="Fotos/Lopez Fredy.jpg"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="mph">
-          <img src="" alt="">
+          <img src="Fotos/Lopez Fredy.jpg" alt="">
         </div>
 
         <div class="mi">
@@ -2440,19 +2483,20 @@ body.modal-open{overflow:hidden}
       <!-- 1 -->
       <div class="mcard"
            data-area="TRANSVERSAL"
+		   data-extra-areas="TECNICOS"
            data-espec="TECNICO MECANICA ESTATICA"
            data-cargo="TECNICO"
            data-nombre="ALDEMAR PAEZ HERNANDEZ"
            data-cc="1121836858"
            data-ruta="Bog - Mor - Vco"
            data-turno="COMM"
-           data-foto=""
+           data-foto="Fotos/Aldemar Paez.jpeg"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="mph">
-          <img src="" alt="">
+          <img src="Fotos/Aldemar Paez.jpeg" alt="">
         </div>
 
         <div class="mi">
@@ -2464,19 +2508,20 @@ body.modal-open{overflow:hidden}
       <!-- 2 -->
       <div class="mcard"
            data-area="TRANSVERSAL"
+		   data-extra-areas="TECNICOS"
            data-espec="TECNICO MECANICA ESTATICA"
            data-cargo="TECNICO"
            data-nombre="CRISTIAN JOSE OROZCO CHAVEZ"
            data-cc="1143455325"
            data-ruta="Bog - Mor - Bog"
            data-turno="COMM"
-           data-foto=""
+           data-foto="Fotos/Cristian Jose.jpg"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="mph">
-          <img src="" alt="">
+          <img src="Fotos/Cristian Jose.jpg" alt="">
         </div>
 
         <div class="mi">
@@ -2505,20 +2550,21 @@ body.modal-open{overflow:hidden}
 
       <!-- 1 -->
       <div class="mcard"
-           data-area="TRANSVERSAL,FACILIDADES, IDA"
+           data-area="FACILIDADES"
+		   data-extra-areas="TECNICOS"
            data-espec="TECNICO MECANICA ROTATIVA"
            data-cargo="TECNICO"
            data-nombre="ALEJANDRO CUADRADO SUAREZ"
            data-cc="1052384643"
            data-ruta="Bog - Mor - Bog"
            data-turno="COMM"
-           data-foto=""
+           data-foto="Fotos/Alejandro Cuadrado.jpg"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="mph">
-          <img src="" alt="">
+          <img src="Fotos/Alejandro Cuadrado.jpg" alt="">
         </div>
 
         <div class="mi">
@@ -2530,6 +2576,7 @@ body.modal-open{overflow:hidden}
       <!-- 2 -->
       <div class="mcard"
            data-area="TRANSVERSAL"
+		   data-extra-areas="TECNICOS"
            data-espec="TECNICO MECANICA ROTATIVA"
            data-cargo="TECNICO"
            data-nombre="LEYDER FERNANDO RICAURTE MARTINEZ"
@@ -2556,8 +2603,352 @@ body.modal-open{overflow:hidden}
 
 </div>
 	
+
 	
+	<!-- ================== QA ================== -->
+<div class="tbox" style="--c:#ff6b6b">
+
+  <div class="tbox-head"
+       style="background:linear-gradient(135deg,#ff6b6b22,#ff6b6b33);border-color:#ff6b6b66">
+    <div class="tname">QA</div>
+    <div class="tcnt">8</div>
+  </div>
+
+  <div class="tbody">
+    <div class="tlist">
+
+      <!-- 1 -->
+		
+<div class="mcard"
+     data-area="TRANSVERSAL"
+     data-espec="ELECTRICO"
+     data-cargo="INGENIERO"
+     data-nombre="RAFAEL ASDRUVAL DEVIA GUARIN"
+     data-cc="13852690"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="2"
+     data-foto="Fotos/Rafael Asdruval.jpg"
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph"><img src="Fotos/Rafael Asdruval.jpg" alt=""></div>
+
+  <div class="mi">
+    <div class="mn">Rafael Asdruval Devia Guarin</div>
+    <div class="mr">ELECTRICO</div>
+  </div>
+</div>
+
+      <!-- 2 -->
+		
+		   <div class="mcard"
+             data-area="TRANSVERSAL"
+             data-espec="CIVIL"
+             data-cargo="INGENIERO"
+             data-nombre="WILLIAM ALEJANDRO RAMIREZ LADINO"
+             data-cc="79977123"
+             data-ruta="Bog - Mor - Bog"
+             data-turno="1"
+             data-foto="Fotos/William Ramirez.jpg"
+             tabindex="0"
+             onclick="abrirModal(this)"
+             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+          <div class="ph">
+            <img src="Fotos/William Ramirez.jpg" alt="">
+          </div>
+
+          <div class="mi">
+            <div class="mn">William Alejandro Ramírez Ladino</div>
+            <div class="mr">CIVIL</div>
+          </div>
+
+        </div>
+	 <!-- 3 -->	
+				   <div class="mcard"
+             data-area="TRANSVERSAL"
+             data-espec="APOYO / COORDINADOR"
+             data-cargo="INGENIERO"
+             data-nombre="Nelson Eduardo Perdomo Guzmán"
+             data-cc="12234700"
+             data-ruta="Bog - Mor - Bog"
+             data-turno="1"
+             data-foto="Fotos/Nelson Guzman.jpg"
+             tabindex="0"
+             onclick="abrirModal(this)"
+             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+          <div class="ph">
+            <img src="Fotos/Nelson Guzman.jpg" alt="">
+          </div>
+
+          <div class="mi">
+            <div class="mn">NELSON EDUARDO PERDOMO GUZMÁN</div>
+            <div class="mr">APOYO / COORDINADOR</div>
+          </div>
+
+        </div>
+		
+		<!-- 4 -->	
+				   <div class="mcard"
+             data-area="TRANSVERSAL"
+             data-espec="MECANICA"
+             data-cargo="INGENIERO"
+             data-nombre="CARLOS ALBERTO BARRERO MENESES"
+             data-cc="93379951"
+             data-ruta="Bog - Mor - Bog"
+             data-turno="1"
+             data-foto="Fotos/Carlos Barrero.jpg"
+             tabindex="0"
+             onclick="abrirModal(this)"
+             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+          <div class="ph">
+            <img src="Fotos/Carlos Barrero.jpg" alt="">
+          </div>
+
+          <div class="mi">
+            <div class="mn">CARLOS ALBERTO BARRERO MENESES</div>
+            <div class="mr">MECANICA</div>
+          </div>
+
+        </div>
+		
+		<!-- 5 -->	
+	<div class="mcard"
+     data-area="TRANSVERSAL"
+     data-espec="CONTROL"
+     data-cargo="INGENIERO"
+     data-nombre="JORGE ARMANDO OSORIO ALMANZA"
+     data-cc="84090922"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="2"
+     data-foto="Fotos/Jorge Osorio.jpg"
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph">
+    <img src="Fotos/Jorge Osorio.jpg" alt="">
+  </div>
+
+  <div class="mi">
+    <div class="mn">Jorge Armando Osorio Almanza</div>
+    <div class="mr">Instrumentación y Control</div>
+  </div>
+</div>
+		
+		<!-- 6 -->	
+				   <div class="mcard"
+             data-area="TRANSVERSAL"
+             data-espec="MECANICA"
+             data-cargo="INGENIERO"
+             data-nombre="HUGO FERNANDO BARRERA ALVARADO "
+             data-cc="74370037"
+             data-ruta="Bog - Mor - Bog"
+             data-turno="1"
+             data-foto="Fotos/William Ramirez.jpg"
+             tabindex="0"
+             onclick="abrirModal(this)"
+             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+          <div class="ph">
+            <img src="Fotos/William Ramirez.jpg" alt="">
+          </div>
+
+          <div class="mi">
+            <div class="mn">HUGO FERNANDO BARRERA ALVARADO </div>
+            <div class="mr">MECANICA</div>
+          </div>
+
+        </div>
+		
+		
+		<!-- 7 -->	
+		<div class="mcard"
+     data-area="TRANSVERSAL"
+     data-espec="ELECTRICO"
+     data-cargo="INGENIERO"
+     data-nombre="CAMILO ANDRES CHAVES BOGOTA"
+     data-cc="1121914682"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="2"
+     data-foto="Fotos/Camilo Chavez.jpeg"
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph"><img src="Fotos/Camilo Chavez.jpeg" alt=""></div>
+
+  <div class="mi">
+    <div class="mn">Camilo Andres Chaves Bogota</div>
+    <div class="mr">ELECTRICO</div>
+  </div>
+</div>
+		
+		
+		<!-- 8 -->	
+				   <div class="mcard"
+             data-area="TRANSVERSAL"
+             data-espec="CIVIL"
+             data-cargo="INGENIERO"
+             data-nombre="CRISTINA MELISSA PAEZ JIMENEZ"
+             data-cc="55227481"
+             data-ruta="Bog - Mor - Bog"
+             data-turno="3"
+             data-foto="Fotos/Cristina Paez.jpg"
+             tabindex="0"
+             onclick="abrirModal(this)"
+             onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+          <div class="ph">
+            <img src="Fotos/Cristina Paez.jpg" alt="">
+          </div>
+
+          <div class="mi">
+            <div class="mn">CRISTINA MELISSA PAEZ JIMENEZ</div>
+            <div class="mr">Instrumentación y Control</div>
+          </div>
+
+        </div>
+		
+     
+
+    </div>
+  </div>
+
+</div>
+<!-- ================== PROCESOS ================== -->
+
+  <div class="tbox" style="--c:#a78bfa">
+
+    <div class="tbox-head"
+         style="background:linear-gradient(135deg,#a78bfa22,#a78bfa33);border-color:#a78bfa66">
+      <div class="tname">PROCESO</div>
+      <div class="tcnt">3</div>
+    </div>
+
+    <div class="tbody">
+      <div class="tlist">
+		  
+		  
+		  <!-- 1 -->
+<div class="mcard"
+     data-area="FACILIDADES"
+     data-espec="PROCESO"
+     data-cargo="INGENIERO"
+     data-nombre="MELQUISEDED SANABRIA"
+     data-cc="1073154419"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="1"
+     data-foto="Fotos/Melqueside Sanabria.jpg"
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph">
+    <img src="Fotos/Melqueside Sanabria.jpg" alt="">
+  </div>
+
+  <div class="mi">
+    <div class="mn">MELQUISEDED SANABRIA</div>
+    <div class="mr">PROCESOS</div>
+  </div>
+</div>
 	
+			  
+		  <!-- 2 -->
+<div class="mcard"
+     data-area="FACILIDADES"
+     data-espec="PROCESO"
+     data-cargo="INGENIERO"
+     data-nombre="LUZ ANGELA LEON"
+     data-cc="33368432"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="1"
+     data-foto="Fotos/Luz Angela.png"
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph">
+    <img src="Fotos/Luz Angela.png" alt="">
+  </div>
+
+  <div class="mi">
+    <div class="mn">LUZ ANGELA LEON</div>
+    <div class="mr">PROCESOS</div>
+  </div>
+</div>
+		  
+		  		  
+		  <!-- 3 -->
+<div class="mcard"
+     data-area="FACILIDADES"
+     data-espec="PROCESO"
+     data-cargo="INGENIERO"
+     data-nombre="GIOVANA LORENA VILLALOBOS"
+     data-cc="1096219366"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="1"
+     data-foto="Fotos/Giovana Lorena.jpg"
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph">
+    <img src="Fotos/Giovana Lorena.jpg" alt="">
+  </div>
+
+  <div class="mi">
+    <div class="mn">GIOVANA LORENA VILLALOBOS</div>
+    <div class="mr">PROCESOS</div>
+  </div>
+</div>
+	
+<!-- ================== PRIMER EMPLEO ================== -->
+
+  <div class="tbox" style="--c:#a78bfa">
+
+    <div class="tbox-head"
+         style="background:linear-gradient(135deg,#a78bfa22,#a78bfa33);border-color:#a78bfa66">
+      <div class="tname">PRIMER EMPLEO</div>
+      <div class="tcnt">1</div>
+    </div>
+
+    <div class="tbody">
+      <div class="tlist">
+		  
+		  
+		  <!-- 1 -->
+<div class="mcard"
+     data-area="FACILIDADES"
+     data-espec="DOCUMENTAL"
+     data-cargo="INGENIERO"
+     data-nombre="CRISTIAN JAVIER RICARDO HERNANDEZ"
+     data-cc="1073154419"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="1"
+     data-foto="Fotos/Cristian Javier.jpg"
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph">
+    <img src="Fotos/Cristian Javier.jpg" alt="">
+  </div>
+
+  <div class="mi">
+    <div class="mn">CRISTIAN JAVIER RICARDO HERNANDEZA</div>
+    <div class="mr">PROCESOS</div>
+  </div>
+</div>
+	
+			  
+		
+		  
+		  
 	<!-- /treeView -->
 
 <!-- ============ VISTA POR ÁREA (flat) ============ -->
