@@ -411,19 +411,19 @@ body.modal-open{overflow:hidden}
 <div class="hero">
   <div>
     <h1>Organigrama ATIP · Rubiales</h1>
-    <div class="sub">Equipo de comisionamiento ECP-CSE M4 · 73 APPLUS+ · 5 Ecopetrol · corte 06 de Julio de 2026</div>
+    <div class="sub">Equipo de comisionamiento ECP-RUB · 78 APPLUS+ · 6 Ecopetrol · corte 15 de Agosto de 2026</div>
   </div>
   <div class="hero-right">
-    <div class="big">85</div>
+    <div class="big">90</div>
     <div class="lbl">Total integrantes</div>
   </div>
 </div>
 
 <div class="kpis">
   <div class="kpi k-ecp" style="--acc:var(--ecp)"><div class="lbl">Ecopetrol</div><div class="val" style="color:var(--ecp)">6&nbsp;</div><div class="sub">cliente / interventoría</div></div>
-  <div class="kpi k-est"><div class="lbl">POZOS</div><div class="val">16</div><div class="sub">Infill/Troncales</div></div>
-  <div class="kpi k-ext"><div class="lbl">FACILIDADES</div><div class="val">35</div><div class="sub">CPF-1 /CPF-2 / Sincronismo </div></div>
-  <div class="kpi k-mat"><div class="lbl">Materiales</div><div class="val">5</div><div class="sub">Control de Materiales</div></div>
+  <div class="kpi k-est"><div class="lbl">POZOS</div><div class="val">18</div><div class="sub">Infill/Troncales</div></div>
+  <div class="kpi k-ext"><div class="lbl">FACILIDADES</div><div class="val">39</div><div class="sub">CPF-1 /CPF-2 / Sincronismo </div></div>
+  <div class="kpi k-mat"><div class="lbl">Materiales</div><div class="val">8</div><div class="sub">Control de Materiales</div></div>
   <div class="kpi k-tra"><div class="lbl">Transversal</div><div class="val">15</div><div class="sub">Planeación/ Certificación / HSE / KPI</div></div>
   <div class="kpi k-ida"><div class="lbl">IDA</div><div class="val">6&nbsp;</div><div class="sub">Integridad de Activos</div></div>
 </div>
@@ -434,7 +434,7 @@ body.modal-open{overflow:hidden}
     <button id="vTree" class="act" onclick="setView('tree')">Organigrama</button>
     <button id="vFlat" onclick="setView('flat')">Por área</button>
   </div>
-  <span class="chip act" data-a="ALL" onclick="filtrarArea(this)">Todos · 83</span>
+  <span class="chip act" data-a="ALL" onclick="filtrarArea(this)">Todos · 90</span>
   <span class="chip" data-a="ECOPETROL" onclick="filtrarArea(this)">Ecopetrol</span>
   <span class="chip" data-a="INFILL" onclick="filtrarArea(this)">Infill</span>
   <span class="chip" data-a="FACILIDADES" onclick="filtrarArea(this)">Facilidades</span>
@@ -569,7 +569,7 @@ body.modal-open{overflow:hidden}
              onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
             <div class="ph">
-                <img src="Fotos/foto.jpg">
+                <img src="Fotos/">
             </div>
 
             <div class="info">
@@ -679,9 +679,9 @@ body.modal-open{overflow:hidden}
                data-espec="COORDINACIÓN"
                data-cargo="COORDINADOR"
                data-nombre="LEONARDO BASTO"
-               data-cc=""
-               data-ruta=""
-               data-turno=""
+               data-cc="12345"
+               data-ruta="Morelia-Bogot+a-Morelia"
+               data-turno="2"
                data-foto="Fotos/Leonardo Basto.png"
                tabindex="0"
                onclick="abrirModal(this)"
@@ -943,7 +943,7 @@ body.modal-open{overflow:hidden}
   <div class="tbox-head"
        style="background:linear-gradient(135deg,#8b5cf622,#8b5cf633);border-color:#8b5cf666">
     <div class="tname">EQUIPO DE CERTIFICACIÓN</div>
-    <div class="tcnt">6&nbsp;</div>
+    <div class="tcnt">5&nbsp;</div>
   </div>
 
   <div class="tbody">
@@ -1048,26 +1048,7 @@ body.modal-open{overflow:hidden}
         </div>
 
       </div>
-  <div class="mcard"
-     data-area="INFILL"
-     data-espec="CERTIFICADOR"
-     data-cargo="INGENIERO"
-     data-nombre="SALUA ISABEL MOLINA CARRILLO"
-     data-cc="1047421225"
-     data-ruta="Bog - Mor - Bog"
-     data-turno="2"
-     data-foto="Fotos/Salua Isabel.jpeg"
-     tabindex="0"
-     onclick="abrirModal(this)"
-     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
-  <div class="ph"><img src="Fotos/Salua Isabel.jpeg" alt=""></div>
-
-  <div class="mi">
-    <div class="mn">Salua Isabel Molina Carrillo</div>
-    <div class="mr">CERTIFICADOR</div>
-  </div>
-</div>
 		<div class="mcard"
      data-area="INFILL"
      data-espec="CERTIFICADOR"
@@ -1108,7 +1089,7 @@ body.modal-open{overflow:hidden}
   <div class="tbox-head"
        style="background:linear-gradient(135deg,#f59e0b22,#f59e0b33);border-color:#f59e0b66">
     <div class="tname">EQUIPO DE MATERIALES</div>
-    <div class="tcnt">6</div>
+    <div class="tcnt">8</div>
   </div>
 
   <div class="tbody">
@@ -1240,6 +1221,28 @@ body.modal-open{overflow:hidden}
         </div>
       </div>
 		
+		  <div class="mcard"
+           data-area="MATERIALES"
+           data-espec="MATERIALES"
+           data-cargo="MATERIALES"
+           data-nombre="MIGUEL ANGEL CUERVO "
+           data-cc=""
+           data-ruta=""
+           data-turno="HOME OFFICE"
+           data-foto="Fotos/Miguel Cuervo.png"
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="Fotos/Miguel Cuervo.png" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Miguel Angel Cuervo</div>
+          <div class="mr">MATERIALES</div>
+        </div>
+      </div>
 		    
 
     
@@ -1262,10 +1265,33 @@ body.modal-open{overflow:hidden}
 
         <div class="mi">
           <div class="mn">Johan Andrey Bermudez Caicedo</div>
-          <div class="mr">MATERIALES</div>
+          <div class="mr">AYUDANTE DE MATERIALES</div>
         </div>
       </div>
 		
+		
+		<div class="mcard"
+           data-area="MATERIALES"
+           data-espec="MATERIALES"
+           data-cargo="MATERIALES"
+           data-nombre="Paula Andrea Rincones"
+           data-cc=""
+           data-ruta=""
+           data-turno=""
+           data-foto="Fotos/Paola Alexandra.jpg"
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="Fotos/Paola Alexandra.jpg" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Paula Andrea Rincones</div>
+          <div class="mr">MATERIALES</div>
+        </div>
+      </div>
 		
 
     </div>
@@ -1530,7 +1556,7 @@ body.modal-open{overflow:hidden}
         </div>
 
         <div class="mi">
-          <div class="mn">Maria del Pilar Garcia Rodriguez</div>
+          <div class="mn">Silvia Zuta</div>
           <div class="mr">HSE</div>
         </div>
 
@@ -1541,21 +1567,21 @@ body.modal-open{overflow:hidden}
            data-area="HSE"
            data-espec="HSE"
            data-cargo="HSE"
-           data-nombre="CESAR ERLEY GARCIA ROZO"
+           data-nombre="DIEGO ARMANDO ROJAS"
            data-cc=""
            data-ruta=""
            data-turno="COMM"
-           data-foto="Fotos/"
+           data-foto="Fotos/Diego Armando.png"
            tabindex="0"
            onclick="abrirModal(this)"
            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
         <div class="mph">
-          <img src="Fotos/" alt="">
+          <img src="Fotos/Diego Armando.png" alt="">
         </div>
 
         <div class="mi">
-          <div class="mn">CESAR ERLEY GARCIA ROZO</div>
+          <div class="mn">DIEGO ARMANDO ROJAS</div>
           <div class="mr">HSE</div>
         </div>
 
@@ -1648,7 +1674,7 @@ body.modal-open{overflow:hidden}
     <div class="tbox-head"
          style="background:linear-gradient(135deg,#22c55e22,#22c55e33);border-color:#22c55e66">
       <div class="tname">EQUIPO ELECTRICO</div>
-      <div class="tcnt">10</div>
+      <div class="tcnt">11</div>
     </div>
 
     <div class="tbody">
@@ -1656,7 +1682,26 @@ body.modal-open{overflow:hidden}
 		  
 		  
 		  
+  <div class="mcard"
+     data-area="INFILL"
+     data-espec="ELECTRICO"
+     data-cargo="INGENIERO"
+     data-nombre="SALUA ISABEL MOLINA CARRILLO"
+     data-cc="1047421225"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="2"
+     data-foto="Fotos/Salua Isabel.jpeg"
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
+  <div class="ph"><img src="Fotos/Salua Isabel.jpeg" alt=""></div>
+
+  <div class="mi">
+    <div class="mn">Salua Isabel Molina Carrillo</div>
+    <div class="mr">CERTIFICADOR</div>
+  </div>
+</div>
 
 <!-- 2 -->
 <div class="mcard"
@@ -1911,21 +1956,21 @@ body.modal-open{overflow:hidden}
      data-area="FACILIDADES"
      data-espec="CONTROL"
      data-cargo="INGENIERO"
-     data-nombre="MARLON ALFONSO REYES FIGUEROA"
+     data-nombre="ELBER HEOVANY ESTEBAN MOJICA"
      data-cc="13716185"
      data-ruta="Bog - Mor - Bog"
      data-turno="1"
-     data-foto="Fotos/Marlon Reyes.jpg"
+     data-foto="Fotos/ELBER HEOVANY.jpg"
      tabindex="0"
      onclick="abrirModal(this)"
      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
   <div class="ph">
-    <img src="Fotos/Marlon Reyes.jpg" alt="">
+    <img src="Fotos/ELBER HEOVANY.jpg" alt="">
   </div>
 
   <div class="mi">
-    <div class="mn">Marlon Alfonso Reyes Figueroa</div>
+    <div class="mn">ELBER HEOVANY ESTEBAN MOJICA</div>
     <div class="mr">SYNCRONISMO-INSTRUMENTACIÓN Y CONTROL</div>
   </div>
 </div>
@@ -2427,7 +2472,7 @@ body.modal-open{overflow:hidden}
   <div class="tbox-head"
        style="background:linear-gradient(135deg,#a78bfa22,#a78bfa33);border-color:#a78bfa66">
     <div class="tname">TÉCNICOS INSTRUMENTACIÓN & CONTROL</div>
-    <div class="tcnt">3</div>
+    <div class="tcnt">4</div>
   </div>
 
   <div class="tbody">
@@ -2507,6 +2552,33 @@ body.modal-open{overflow:hidden}
           <div class="mr">INSTRUMENTACIÓN Y CONTROL</div>
         </div>
       </div>
+		
+		     <!-- 4 -->
+      <div class="mcard"
+           data-area="FACILIDADES"
+		   data-extra-areas="TECNICOS"
+           data-espec="INSTRUMENTACION Y CONTROL"
+           data-cargo="TECNICO"
+           data-nombre="JUAN CARLOS CARVAJAL"
+           data-cc="16114413"
+           data-ruta="Bog - Mor - Bog"
+           data-turno="COMM"
+           data-foto="Fotos/Juan Carvajal.jpg"
+           tabindex="0"
+           onclick="abrirModal(this)"
+           onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+        <div class="mph">
+          <img src="Fotos/Juan Carvajal.jpg" alt="">
+        </div>
+
+        <div class="mi">
+          <div class="mn">Juan Carlos Carvajal</div>
+          <div class="mr">INSTRUMENTACIÓN Y CONTROL</div>
+        </div>
+      </div>
+		
+		
 
     </div>
   </div>
@@ -2804,7 +2876,7 @@ body.modal-open{overflow:hidden}
           </div>
 
           <div class="mi">
-            <div class="mn">HUGO FERNANDO BARRERA ALVARADO </div>
+            <div class="mn">Hugo Fernando Barrera Alvarado </div>
             <div class="mr">MECANICA</div>
           </div>
 
@@ -2872,7 +2944,7 @@ body.modal-open{overflow:hidden}
     <div class="tbox-head"
          style="background:linear-gradient(135deg,#a78bfa22,#a78bfa33);border-color:#a78bfa66">
       <div class="tname">PROCESO</div>
-      <div class="tcnt">3</div>
+      <div class="tcnt">4</div>
     </div>
 
     <div class="tbody">
@@ -2934,21 +3006,21 @@ body.modal-open{overflow:hidden}
      data-area="FACILIDADES"
      data-espec="PROCESO"
      data-cargo="INGENIERO"
-     data-nombre="GIOVANA LORENA VILLALOBOS"
-     data-cc="1096219366"
+     data-nombre="Victor Raul Polo"
+     data-cc="72211961"
      data-ruta="Bog - Mor - Bog"
      data-turno="1"
-     data-foto="Fotos/Giovana Lorena.jpg"
+     data-foto="Fotos/Victor Polo.jpeg"
      tabindex="0"
      onclick="abrirModal(this)"
      onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
 
   <div class="ph">
-    <img src="Fotos/Giovana Lorena.jpg" alt="">
+    <img src="Fotos/Victor Polo.jpeg" alt="">
   </div>
 
   <div class="mi">
-    <div class="mn">Laura Andrea Curubo</div>
+    <div class="mn">Victor Raul Polo</div>
     <div class="mr">PROCESOS</div>
   </div>
 </div>
@@ -2973,7 +3045,7 @@ body.modal-open{overflow:hidden}
   </div>
 
   <div class="mi">
-    <div class="mn">LAURA ANDREA CURUBO</div>
+    <div class="mn">GIOVANA LORENA VILLALOBOS</div>
     <div class="mr">PROCESOS</div>
   </div>
 </div>
@@ -2985,8 +3057,8 @@ body.modal-open{overflow:hidden}
 
     <div class="tbox-head"
          style="background:linear-gradient(135deg,#a78bfa22,#a78bfa33);border-color:#a78bfa66">
-      <div class="tname">PRIMER EMPLEO</div>
-      <div class="tcnt">1</div>
+      <div class="tname">PRIMER EMPLEO-PRACTICANTE</div>
+      <div class="tcnt">3</div>
     </div>
 
     <div class="tbody">
@@ -2994,7 +3066,12 @@ body.modal-open{overflow:hidden}
 		  
 		  
 		  <!-- 1 -->
-<div class="mcard"
+
+	
+			  
+		
+		  
+		  <div class="mcard"
      data-area="FACILIDADES"
      data-espec="DOCUMENTAL"
      data-cargo="INGENIERO"
@@ -3013,15 +3090,60 @@ body.modal-open{overflow:hidden}
 
   <div class="mi">
     <div class="mn">CRISTIAN JAVIER RICARDO HERNANDEZA</div>
-    <div class="mr">PROCESOS</div>
+    <div class="mr">CIVIL-PASANTE</div>
   </div>
 </div>
-	
-			  
-		
+		  	  <div class="mcard"
+     data-area="FACILIDADES"
+     data-espec="DOCUMENTAL"
+     data-cargo="INGENIERO"
+     data-nombre="DANIEL ENRIQUE APOLINAR CASTIBLANCO"
+     data-cc="1073154419"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="1"
+     data-foto="Fotos/Daniel Enrique.jpeg"
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph">
+    <img src="Fotos/Daniel Enrique.jpeg" alt="">
+  </div>
+
+  <div class="mi">
+    <div class="mn">DANIEL ENRIQUE APOLINAR CASTIBLANCO</div>
+    <div class="mr">MECANICO-PASANTE</div>
+  </div>
+</div>
 		  
 		  
+		  <div class="mcard"
+     data-area="FACILIDADES"
+     data-espec="DOCUMENTAL"
+     data-cargo="INGENIERO"
+     data-nombre="BRAYAN DANIEL SAIDIZA AMAYA"
+     data-cc="1073154419"
+     data-ruta="Bog - Mor - Bog"
+     data-turno="1"
+     data-foto="Fotos/Brayan.jpg"
+     tabindex="0"
+     onclick="abrirModal(this)"
+     onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();abrirModal(this)}">
+
+  <div class="ph">
+    <img src="Fotos/Brayan.jpg" alt="">
+  </div>
+
+  <div class="mi">
+    <div class="mn">BRAYAN DANIEL SAIDIZA AMAYA</div>
+    <div class="mr">ELECTRICO PRIMER EMPLEO</div>
+  </div>
+</div>
 	<!-- /treeView -->
+		  
+		  
+		  
+		  
 
 <!-- ============ VISTA POR ÁREA (flat) ============ -->
 
